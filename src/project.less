@@ -1,0 +1,68 @@
+/**
+ * 标的组件部分
+ * @author       Peach<scdzwyxst@gmail.com>
+ * @date         2015-11-20
+ */
+.project-list{
+  .project-item{
+    .clearfix;
+    margin-top: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    // 标的名称
+    > h3{
+      margin: 0;
+      padding: 15px 12px;
+      a{
+        color: @c-project-title;
+        text-decoration: none;
+        &:hover,
+        &:focus{
+          color: lighten(@c-project-title, 10%);
+        }
+      }
+    }
+    // 标的属性
+    .project-attr{
+      padding-left: 12px;
+      .project-attr-desc{
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+      }
+      // 属性值
+      .project-attr-val{
+        line-height: @project-attr-font-size + 30;
+        font-size: @project-attr-font-size;
+        small{
+          font-size: 60%;
+          vertical-align: middle;
+        }
+      }
+      // 不同类型的属性样式
+      &.rate{
+        .project-attr-val{
+          color: @c-project-rate;
+        }
+      }
+      &.amount{
+        .project-attr-val{
+          color: @c-project-amount;
+        }
+      }
+      &.periods{
+        .project-attr-val{
+          color: @c-project-periods;
+        }
+      }
+      &.others{
+        .project-attr-val{
+          color: #333;
+        }
+      }
+      &.invest{
+        padding-top: 20px;
+      }
+    }
+  }
+}
