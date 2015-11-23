@@ -1,0 +1,129 @@
+/*!/src/ui-p2p-lending.less*/
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: '';
+  clear: both;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+.container:after,
+.container:before {
+  display: table;
+  content: '';
+  clear: both;
+}
+.container .col-1,
+.container .col-2,
+.container .col-3,
+.container .col-4,
+.container .col-5,
+.container .col-6,
+.container .col-7,
+.container .col-8,
+.container .col-9,
+.container .col-10,
+.container .col-11,
+.container .col-12 {
+  float: left;
+  min-height: 1px;
+  box-sizing: border-box;
+}
+.container .col-1 {
+  width: 8.33333333%;
+}
+.container .col-2 {
+  width: 16.66666667%;
+}
+.container .col-3 {
+  width: 25%;
+}
+.container .col-4 {
+  width: 33.33333333%;
+}
+.container .col-5 {
+  width: 41.66666667%;
+}
+.container .col-6 {
+  width: 50%;
+}
+.container .col-7 {
+  width: 58.33333333%;
+}
+.container .col-8 {
+  width: 66.66666667%;
+}
+.container .col-9 {
+  width: 75%;
+}
+.container .col-10 {
+  width: 83.33333333%;
+}
+.container .col-11 {
+  width: 91.66666667%;
+}
+.container .col-12 {
+  width: 100%;
+}
+/**
+ * 标的组件部分
+ * @author       Peach<scdzwyxst@gmail.com>
+ * @date         2015-11-20
+ */
+.project-list .project-item {
+  margin-top: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.project-list .project-item:after,
+.project-list .project-item:before {
+  display: table;
+  content: '';
+  clear: both;
+}
+.project-list .project-item > h3 {
+  margin: 0;
+  padding: 15px 12px;
+}
+.project-list .project-item > h3 a {
+  color: #0d8dd9;
+  text-decoration: none;
+}
+.project-list .project-item > h3 a:hover,
+.project-list .project-item > h3 a:focus {
+  color: #27a6f2;
+}
+.project-list .project-item .project-attr {
+  padding-left: 12px;
+}
+.project-list .project-item .project-attr .project-attr-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+.project-list .project-item .project-attr .project-attr-val {
+  line-height: 62px;
+  font-size: 32px;
+}
+.project-list .project-item .project-attr .project-attr-val small {
+  font-size: 60%;
+  vertical-align: middle;
+}
+.project-list .project-item .project-attr.rate .project-attr-val {
+  color: #ff4155;
+}
+.project-list .project-item .project-attr.amount .project-attr-val {
+  color: #666666;
+}
+.project-list .project-item .project-attr.periods .project-attr-val {
+  color: #666666;
+}
+.project-list .project-item .project-attr.others .project-attr-val {
+  color: #333;
+}
+.project-list .project-item .project-attr.invest {
+  padding-top: 20px;
+}
