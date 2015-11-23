@@ -1,0 +1,9 @@
+// 清除浮动
+.clearfix{
+  &:after,
+  &:before{
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
