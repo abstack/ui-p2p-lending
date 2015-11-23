@@ -1,3 +1,4 @@
+@import '../lib/normalize.css';
 .clearfix:after,
 .clearfix:before {
   display: table;
