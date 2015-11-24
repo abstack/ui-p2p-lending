@@ -818,3 +818,30 @@ a.button {
 .form-inline .form-group {
   display: inline-block;
 }
+.caution-box {
+  margin: 15px 0;
+  padding: 10px 15px;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.caution-box.caution-danger {
+  color: #ea0000;
+  background-color: #ffe0e0;
+  border-color: #ffb7b7;
+}
+.caution-box.caution-warning {
+  color: #e88100;
+  background-color: #fff0de;
+  border-color: #ffc782;
+}
+.caution-box.caution-info {
+  color: #0292d7;
+  background-color: #cfefff;
+  border-color: #89d8fe;
+}
+.caution-box.caution-success {
+  color: #5e8323;
+  background-color: #d4eab1;
+  border-color: #a7d560;
+}
