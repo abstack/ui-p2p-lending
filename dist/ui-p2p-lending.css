@@ -516,12 +516,12 @@ th {
   padding: 15px 12px;
 }
 .project-list .project-item > h3 a {
-  color: #36ccff;
+  color: #38bdfd;
   text-decoration: none;
 }
 .project-list .project-item > h3 a:hover,
 .project-list .project-item > h3 a:focus {
-  color: #69d9ff;
+  color: #6acefe;
 }
 .project-list .project-item .project-attr {
   padding-left: 12px;
@@ -540,7 +540,7 @@ th {
   vertical-align: middle;
 }
 .project-list .project-item .project-attr.rate .project-attr-val {
-  color: #ff4155;
+  color: #ff4747;
 }
 .project-list .project-item .project-attr.amount .project-attr-val {
   color: #666666;
@@ -555,22 +555,22 @@ th {
   padding-top: 20px;
 }
 *.text-danger {
-  color: #ff4155;
+  color: #ff4747;
 }
 *.text-warning {
-  color: #ff7d22;
+  color: #ffac45;
 }
 *.text-calm {
-  color: #36ccff;
+  color: #38bdfd;
 }
 *.text-dream {
-  color: #885aff;
+  color: #9b7aef;
 }
 *.text-cute {
-  color: #ff5fb8;
+  color: #ff82b0;
 }
 *.text-growth {
-  color: #67d841;
+  color: #91ca38;
 }
 *.text-dark {
   color: #333333;
@@ -591,4 +591,127 @@ th {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.button {
+  padding: 10px 20px;
+  color: #666;
+  border: 1px solid;
+  background-color: #fff;
+  outline: none;
+  border-color: #d9d9d9;
+}
+.button:hover {
+  background-color: #f2f2f2;
+}
+.button:active {
+  background-color: #d4d4d4;
+}
+.button:focus {
+  background-color: #f2f2f2;
+  border-color: #b8b8b8;
+}
+.button.button-danger {
+  color: #fff;
+  background-color: #ff4747;
+  border-color: #f90000;
+}
+.button.button-danger:hover {
+  background-color: #ff2d2d;
+}
+.button.button-danger:active {
+  background-color: #ef0000;
+}
+.button.button-danger:focus {
+  background-color: #ff2d2d;
+  border-color: #b70000;
+}
+.button.button-warning {
+  color: #fff;
+  background-color: #ffac45;
+  border-color: #f78900;
+}
+.button.button-warning:hover {
+  background-color: #ffa12b;
+}
+.button.button-warning:active {
+  background-color: #ed8300;
+}
+.button.button-warning:focus {
+  background-color: #ffa12b;
+  border-color: #b56400;
+}
+.button.button-calm {
+  color: #fff;
+  background-color: #38bdfd;
+  border-color: #029ce6;
+}
+.button.button-calm:hover {
+  background-color: #1fb5fd;
+}
+.button.button-calm:active {
+  background-color: #0295dc;
+}
+.button.button-calm:focus {
+  background-color: #1fb5fd;
+  border-color: #0270a5;
+}
+.button.button-dream {
+  color: #fff;
+  background-color: #9b7aef;
+  border-color: #6836e7;
+}
+.button.button-dream:hover {
+  background-color: #8a63ec;
+}
+.button.button-dream:active {
+  background-color: #612de6;
+}
+.button.button-dream:focus {
+  background-color: #8a63ec;
+  border-color: #4817c3;
+}
+.button.button-cute {
+  color: #fff;
+  background-color: #ff82b0;
+  border-color: #ff3580;
+}
+.button.button-cute:hover {
+  background-color: #ff68a0;
+}
+.button.button-cute:active {
+  background-color: #ff2b79;
+}
+.button.button-cute:focus {
+  background-color: #ff68a0;
+  border-color: #f20059;
+}
+.button.button-growth {
+  color: #fff;
+  background-color: #91ca38;
+  border-color: #668f26;
+}
+.button.button-growth:hover {
+  background-color: #83b831;
+}
+.button.button-growth:active {
+  background-color: #618724;
+}
+.button.button-growth:focus {
+  background-color: #83b831;
+  border-color: #415b18;
+}
+.button.button-dark {
+  color: #fff;
+  background-color: #333333;
+  border-color: #0d0d0d;
+}
+.button.button-dark:hover {
+  background-color: #262626;
+}
+.button.button-dark:active {
+  background-color: #080808;
+}
+.button.button-dark:focus {
+  background-color: #262626;
+  border-color: #000000;
 }

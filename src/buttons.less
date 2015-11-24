@@ -1,0 +1,56 @@
+.button-handle-produce(@color){
+  border-color: darken(@color, 15%);
+  &:hover{
+    background-color: darken(@color, 5%);
+  }
+  &:active{
+    background-color: darken(@color, 17%);
+  }
+  &:focus{
+    background-color: darken(@color, 5%);
+    border-color: darken(@color, 28%);
+  }
+}
+.button{
+  padding: 10px 20px;
+  color: #666;
+  border: 1px solid;
+  background-color: #fff;
+  outline: none;
+  .button-handle-produce(#fff);
+  &.button-danger{
+    color: #fff;
+    background-color: @c-danger;
+    .button-handle-produce(@c-danger);
+  }
+  &.button-warning{
+    color: #fff;
+    background-color: @c-warning;
+    .button-handle-produce(@c-warning);
+  }
+  &.button-calm{
+    color: #fff;
+    background-color: @c-calm;
+    .button-handle-produce(@c-calm);
+  }
+  &.button-dream{
+    color: #fff;
+    background-color: @c-dream;
+    .button-handle-produce(@c-dream);
+  }
+  &.button-cute{
+    color: #fff;
+    background-color: @c-cute;
+    .button-handle-produce(@c-cute);
+  }
+  &.button-growth{
+    color: #fff;
+    background-color: @c-growth;
+    .button-handle-produce(@c-growth);
+  }
+  &.button-dark{
+    color: #fff;
+    background-color: @c-dark;
+    .button-handle-produce(@c-dark);
+  }
+}
