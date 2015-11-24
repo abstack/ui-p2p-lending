@@ -323,12 +323,6 @@
   </div>
   <div class="component-wrapper">
     <h2 class="component-title">信息提示样式</h2>
-    <p class="component-desc">
-      除垂直排列的表单之外，给<code>form</code>加上<code>form-inline</code>的 className，则会以行内表单样式呈现。
-    </p>
-    <p class="component-desc">
-      表单可具备三种状态：错误（红色）、警告（橙色）、成功（绿色），给<code>form-group</code>分别加上<code>form-group-error</code>、<code>form-group-warning</code>、<code>form-group-success</code>即可显示对应状态。
-    </p>
     <div class="caution-box">
       默认提示
     </div>
@@ -345,58 +339,20 @@
       成功提示
     </div>
     <pre class="component-code">
-&lt;div class="container"&gt;
-  &lt;div class="col-2"&gt;&lt;/div&gt;
-  &lt;div class="col-8"&gt;
-    &lt;form&gt;
-      &lt;div class="form-group form-group-error"&gt;
-        &lt;label for="username" class="col-3 text-right"&gt;用户名：&lt;/label&gt;
-        &lt;input id="username" type="text" class="form-control"&gt;
-        &lt;span class="form-control-note"&gt;*用户名为必填&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="username" class="col-3 text-right"&gt;上次登录时间：&lt;/label&gt;
-        &lt;input id="username" type="text" class="form-control" readonly="disabled" value="123"&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="username" class="col-3 text-right"&gt;用户类型：&lt;/label&gt;
-        &lt;select id="username" class="form-control"&gt;
-          &lt;option value="1"&gt;普通用户&lt;/option&gt;
-          &lt;option value="2"&gt;管理员&lt;/option&gt;
-        &lt;/select&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="username" class="col-3 text-right"&gt;验证码：&lt;/label&gt;
-        &lt;input id="username" type="text" class="form-control form-control-small"&gt;
-        &lt;a href="javascript:;"&gt;
-          &lt;img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode"&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;div class="col-3"&gt;&lt;/div&gt;
-        &lt;label class="checkbox"&gt;
-          &lt;input type="checkbox"&gt;
-          记住我一星期
-        &lt;/label&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;div class="col-3"&gt;&lt;/div&gt;
-        &lt;label class="radio"&gt;
-          &lt;input type="radio" name="sex"&gt;
-          男
-        &lt;/label&gt;
-        &lt;label class="radio"&gt;
-          &lt;input type="radio" name="sex"&gt;
-          女
-        &lt;/label&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;div class="col-3"&gt;&lt;/div&gt;
-        &lt;button class="button button-calm"&gt;立即登录&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/form&gt;
-  &lt;/div&gt;
-  &lt;div class="col-2"&gt;&lt;/div&gt;
+&lt;div class="caution-box"&gt;
+  默认提示
+&lt;/div&gt;
+&lt;div class="caution-box caution-danger"&gt;
+  危险提示
+&lt;/div&gt;
+&lt;div class="caution-box caution-warning"&gt;
+  警告提示
+&lt;/div&gt;
+&lt;div class="caution-box caution-info"&gt;
+  信息提示
+&lt;/div&gt;
+&lt;div class="caution-box caution-success"&gt;
+  成功提示
 &lt;/div&gt;
     </pre>
   </div>
