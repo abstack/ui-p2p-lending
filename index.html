@@ -152,7 +152,7 @@
               <strong class="project-attr-val">100000 <small>元</small></strong>
             </div>
             <div class="project-attr invest col-3">
-              <button>立即投标</button>
+              <a href="javascript:;" class="button button-danger">立即投标</a>
             </div>
           </div>
         </div>
@@ -202,6 +202,123 @@
 &lt;button class="button button-cute"&gt;粉色按钮&lt;/button&gt;
 &lt;button class="button button-growth"&gt;绿色按钮&lt;/button&gt;
 &lt;button class="button button-dark"&gt;黑色按钮&lt;/button&gt;
+    </pre>
+  </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">表单样式</h2>
+    <p class="component-desc">
+      除垂直排列的表单之外，给<code>form</code>加上<code>form-inline</code>的 className，则会以行内表单样式呈现。
+    </p>
+    <p class="component-desc">
+      表单可具备三种状态：错误（红色）、警告（橙色）、成功（绿色），给<code>form-group</code>分别加上<code>form-group-error</code>、<code>form-group-warning</code>、<code>form-group-success</code>即可显示对应状态。
+    </p>
+    <div class="container">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <form>
+          <div class="form-group form-group-error">
+            <label for="username" class="col-3 text-right">用户名：</label>
+            <input id="username" type="text" class="form-control">
+            <span class="form-control-note">*用户名为必填</span>
+          </div>
+          <div class="form-group">
+            <label for="username" class="col-3 text-right">上次登录时间：</label>
+            <input id="username" type="text" class="form-control" readonly="disabled" value="123">
+          </div>
+          <div class="form-group">
+            <label for="username" class="col-3 text-right">用户类型：</label>
+            <select id="username" class="form-control">
+              <option value="1">普通用户</option>
+              <option value="2">管理员</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="username" class="col-3 text-right">验证码：</label>
+            <input id="username" type="text" class="form-control form-control-small">
+            <a href="javascript:;">
+              <img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode">
+            </a>
+          </div>
+          <div class="form-group">
+            <div class="col-3"></div>
+            <label class="checkbox">
+              <input type="checkbox">
+              记住我一星期
+            </label>
+          </div>
+          <div class="form-group">
+            <div class="col-3"></div>
+            <label class="radio">
+              <input type="radio" name="sex">
+              男
+            </label>
+            <label class="radio">
+              <input type="radio" name="sex">
+              女
+            </label>
+          </div>
+          <div class="form-group">
+            <div class="col-3"></div>
+            <button class="button button-calm">立即登录</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <pre class="component-code">
+&lt;div class="container"&gt;
+  &lt;div class="col-2"&gt;&lt;/div&gt;
+  &lt;div class="col-8"&gt;
+    &lt;form&gt;
+      &lt;div class="form-group form-group-error"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;用户名：&lt;/label&gt;
+        &lt;input id="username" type="text" class="form-control"&gt;
+        &lt;span class="form-control-note"&gt;*用户名为必填&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;上次登录时间：&lt;/label&gt;
+        &lt;input id="username" type="text" class="form-control" readonly="disabled" value="123"&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;用户类型：&lt;/label&gt;
+        &lt;select id="username" class="form-control"&gt;
+          &lt;option value="1"&gt;普通用户&lt;/option&gt;
+          &lt;option value="2"&gt;管理员&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;验证码：&lt;/label&gt;
+        &lt;input id="username" type="text" class="form-control form-control-small"&gt;
+        &lt;a href="javascript:;"&gt;
+          &lt;img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode"&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;div class="col-3"&gt;&lt;/div&gt;
+        &lt;label class="checkbox"&gt;
+          &lt;input type="checkbox"&gt;
+          记住我一星期
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;div class="col-3"&gt;&lt;/div&gt;
+        &lt;label class="radio"&gt;
+          &lt;input type="radio" name="sex"&gt;
+          男
+        &lt;/label&gt;
+        &lt;label class="radio"&gt;
+          &lt;input type="radio" name="sex"&gt;
+          女
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;div class="col-3"&gt;&lt;/div&gt;
+        &lt;button class="button button-calm"&gt;立即登录&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div class="col-2"&gt;&lt;/div&gt;
+&lt;/div&gt;
     </pre>
   </div>
 </body>

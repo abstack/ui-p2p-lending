@@ -423,6 +423,7 @@ th {
   padding: 0;
 }
 
+/*圆角*/
 .clearfix:after,
 .clearfix:before {
   display: table;
@@ -552,7 +553,7 @@ th {
   color: #333;
 }
 .project-list .project-item .project-attr.invest {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 *.text-danger {
   color: #ff4747;
@@ -591,6 +592,9 @@ th {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+a.button {
+  text-decoration: none;
 }
 .button {
   padding: 10px 20px;
@@ -714,4 +718,103 @@ th {
 .button.button-dark:focus {
   background-color: #262626;
   border-color: #000000;
+}
+.form-group {
+  margin-top: 10px;
+}
+.form-group label {
+  color: #333;
+}
+.form-group label[class^=col-] {
+  padding-top: 11px;
+}
+.form-group .form-control {
+  width: 200px;
+  padding: 10px 5px;
+  color: #333;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+}
+.form-group .form-control:focus {
+  border-color: #38bdfd;
+}
+.form-group .form-control[disabled] {
+  color: #666;
+  background-color: #f3f3f3;
+  cursor: not-allowed;
+}
+.form-group .form-control[readonly] {
+  background-color: #f3f3f3;
+}
+.form-group .form-control.form-control-small {
+  width: 80px;
+}
+.form-group .form-control.form-control-large {
+  width: 300px;
+}
+.form-group select.form-control {
+  height: 38px;
+  background-color: #fff;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+.form-group .checkbox,
+.form-group .radio {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.form-group .form-vcode {
+  height: 38px;
+  padding-left: 5px;
+  vertical-align: top;
+}
+.form-group .form-control-note {
+  padding-left: 10px;
+  font-size: 14px;
+}
+.form-group.form-group-error {
+  color: #e00000;
+}
+.form-group.form-group-error label {
+  color: #e00000;
+}
+.form-group.form-group-error .form-control {
+  color: #e00000;
+  border-color: #e00000;
+}
+.form-group.form-group-error .form-control:focus {
+  border-color: #ff4747;
+}
+.form-group.form-group-success {
+  color: #638b25;
+}
+.form-group.form-group-success label {
+  color: #638b25;
+}
+.form-group.form-group-success .form-control {
+  color: #638b25;
+  border-color: #638b25;
+}
+.form-group.form-group-success .form-control:focus {
+  border-color: #91ca38;
+}
+.form-group.form-group-warning {
+  color: #f28600;
+}
+.form-group.form-group-warning label {
+  color: #f28600;
+}
+.form-group.form-group-warning .form-control {
+  color: #f28600;
+  border-color: #f28600;
+}
+.form-group.form-group-warning .form-control:focus {
+  border-color: #ffac45;
+}
+.form-inline .form-group {
+  display: inline-block;
 }
