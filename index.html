@@ -356,5 +356,97 @@
 &lt;/div&gt;
     </pre>
   </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">表格组件</h2>
+    <p class="component-desc">
+      表格组件提供默认的表格样式去除了 collapse 及 spacing，并且给 th 添加了下边框。与此同时也提供了<code>table-bordered</code>className 给表格加上边框、<code>table-hover</code>给表格加上鼠标悬浮效果、<code>table-striped</code>使<code>tbody</code>中奇数行与偶数行的背景颜色不一致。
+    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>性别</th>
+          <th>年龄</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>男</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>小丽</td>
+          <td>女</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-bordered table-hover table-striped light-bg">
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>性别</th>
+          <th>年龄</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>男</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>小丽</td>
+          <td>女</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+    </table>
+    <pre class="component-code">
+&lt;table class="table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;姓名&lt;/th&gt;
+      &lt;th&gt;性别&lt;/th&gt;
+      &lt;th&gt;年龄&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;张三&lt;/td&gt;
+      &lt;td&gt;男&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;小丽&lt;/td&gt;
+      &lt;td&gt;女&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="table table-bordered table-hover table-striped light-bg"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;姓名&lt;/th&gt;
+      &lt;th&gt;性别&lt;/th&gt;
+      &lt;th&gt;年龄&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;张三&lt;/td&gt;
+      &lt;td&gt;男&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;小丽&lt;/td&gt;
+      &lt;td&gt;女&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+    </pre>
+  </div>
 </body>
 </html>

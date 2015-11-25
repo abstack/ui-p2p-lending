@@ -1,0 +1,42 @@
+.table{
+  margin: 10px 0;
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  th,td{
+    padding: 10px;
+  }
+  th{
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  &.table-bordered{
+    border: 1px solid #ccc;
+    th,td{
+      border: 1px solid #ccc;
+    }
+    th{
+      border-bottom-width: 2px;
+    }
+  }
+  &.table-hover{
+    tbody{
+      tr{
+        &:hover{
+          background-color: #fafafa;
+        }
+      }
+    }
+  }
+  &.table-striped{
+    tbody{
+      tr:nth-child(odd){
+        background-color: #f7f7f7;
+        &:hover{
+          background-color: #fafafa;
+        }
+      }
+    }
+  }
+}

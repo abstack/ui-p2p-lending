@@ -724,6 +724,7 @@ a.button {
 }
 .form-group label {
   color: #333;
+  margin-right: 10px;
 }
 .form-group label[class^=col-] {
   padding-top: 11px;
@@ -822,6 +823,8 @@ a.button {
   margin: 15px 0;
   padding: 10px 15px;
   color: #666;
+  font-size: 14px;
+  line-height: 18px;
   background-color: #fff;
   border: 1px solid #ddd;
 }
@@ -844,4 +847,38 @@ a.button {
   color: #5e8323;
   background-color: #d4eab1;
   border-color: #a7d560;
+}
+.table {
+  margin: 10px 0;
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 10px;
+}
+.table th {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+.table.table-bordered {
+  border: 1px solid #ccc;
+}
+.table.table-bordered th,
+.table.table-bordered td {
+  border: 1px solid #ccc;
+}
+.table.table-bordered th {
+  border-bottom-width: 2px;
+}
+.table.table-hover tbody tr:hover {
+  background-color: #fafafa;
+}
+.table.table-striped tbody tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.table.table-striped tbody tr:nth-child(odd):hover {
+  background-color: #fafafa;
 }
