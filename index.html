@@ -448,6 +448,55 @@
 &lt;/table&gt;
     </pre>
   </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">选项卡切换样式</h2>
+    <p class="component-desc">给<code>tabs-header</code>中的<code>li</code>标签和对应的<code>tabs-content</code>加上<code>active</code>className 则会选中中该选项卡。</p>
+    <p class="component-desc">
+      <span class="text-danger">注：暂不支持点击切换不同的选项卡</span>
+    </p>
+    <div class="tabs">
+      <ul class="tabs-header">
+        <li class="active">
+          <a href="javascript:;">工作经历</a>
+        </li>
+        <li>
+          <a href="javascript:;">曾获荣誉</a>
+        </li>
+      </ul>
+      <div class="tabs-content active">
+        <p>2011 家里蹲大学</p>
+        <p>2012 车库研究院</p>
+        <p>2015 社会大学</p>
+      </div>
+      <div class="tabs-content">
+        <p>2011 家里蹲大学</p>
+        <p>2012 车库研究院</p>
+        <p>2015 社会大学</p>
+      </div>
+    </div>
+    <pre class="component-code">
+&lt;div class="tabs"&gt;
+  &lt;ul class="tabs-header"&gt;
+    &lt;li class="active"&gt;
+      &lt;a href="javascript:;"&gt;工作经历&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="javascript:;"&gt;曾获荣誉&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="tabs-content active"&gt;
+    &lt;p&gt;2011 家里蹲大学&lt;/p&gt;
+    &lt;p&gt;2012 车库研究院&lt;/p&gt;
+    &lt;p&gt;2015 社会大学&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="tabs-content"&gt;
+    &lt;p&gt;2011 家里蹲大学&lt;/p&gt;
+    &lt;p&gt;2012 车库研究院&lt;/p&gt;
+    &lt;p&gt;2015 社会大学&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+  </div>
   <!-- Todo1: 标签组件，类似（http://v3.bootcss.com/components/#labels） -->
   <!-- Todo2: 徽章组件，类似（http://v3.bootcss.com/components/#badges） -->
   <!-- Todo3: 过滤筛选组件 -->

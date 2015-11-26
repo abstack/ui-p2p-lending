@@ -882,3 +882,44 @@ a.button {
 .table.table-striped tbody tr:nth-child(odd):hover {
   background-color: #fafafa;
 }
+.tabs:after,
+.tabs:before {
+  display: table;
+  content: '';
+  clear: both;
+}
+.tabs .tabs-header {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.tabs .tabs-header li {
+  float: left;
+  margin-right: -1px;
+}
+.tabs .tabs-header li a {
+  display: block;
+  padding: 13px 25px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  background-color: #f3f3f3;
+}
+.tabs .tabs-header li a:hover {
+  background-color: #fafafa;
+}
+.tabs .tabs-header li.active a {
+  border-bottom-color: #fff;
+  background-color: #fff;
+}
+.tabs .tabs-content {
+  display: none;
+  margin-top: -1px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.tabs .tabs-content.active {
+  display: block;
+}
