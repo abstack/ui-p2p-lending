@@ -1,6 +1,6 @@
+@vgap: 10px;
+@control-height: @vgap*2 + 16 + 2; // 垂直间隙 + 字体大小 + 边框大小
 .form-group{
-  @vgap: 10px;
-  @control-height: @vgap*2 + 16 + 2; // 垂直间隙 + 字体大小 + 边框大小
   margin-top: 10px;
   label{
     color: #333;
@@ -10,55 +10,9 @@
   }
   .form-control{
     margin-left: 10px;
-    width: 200px;
-    padding: @vgap 5px;
-    color: #333;
-    border: 1px solid #ccc;
-    outline: none;
-    box-sizing: border-box;
-    &:focus{
-      border-color: @c-calm;
-    }
-    &[disabled]{
-      color: #666;
-      background-color: #f3f3f3;
-      cursor: not-allowed;
-    }
-    &[readonly]{
-      background-color: #f3f3f3;
-    }
-    &.form-control-small{
-      width: 80px;
-    }
-    &.form-control-large{
-      width: 300px;
-    }
   }
-  // 下拉菜单
-  select.form-control{
-    height: @control-height;
-    background-color: #fff;
-    .border-radius(0);
-  }
-  // 文本域
-  textarea.form-control{
-    resize: vertical;
-  }
-  // 单选复选框
   .checkbox, .radio{
     margin-left: 10px;
-    cursor: pointer;
-  }
-  // 验证码
-  .form-vcode{
-    height: @control-height;
-    padding-left: 5px;
-    vertical-align: top;
-  }
-  // 备注信息
-  .form-control-note{
-    padding-left: 10px;
-    font-size: 14px;
   }
   // 表单组状态
   &.form-group-error{
@@ -103,6 +57,56 @@
   .button{
     margin-left: 10px;
   }
+}
+.form-control{
+  width: 200px;
+  padding: @vgap 5px;
+  color: #333;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  &:focus{
+    border-color: @c-calm;
+  }
+  &[disabled]{
+    color: #666;
+    background-color: #f3f3f3;
+    cursor: not-allowed;
+  }
+  &[readonly]{
+    background-color: #f3f3f3;
+  }
+  &.form-control-small{
+    width: 80px;
+  }
+  &.form-control-large{
+    width: 300px;
+  }
+}
+// 下拉菜单
+select.form-control{
+  height: @control-height;
+  background-color: #fff;
+  .border-radius(0);
+}
+// 文本域
+textarea.form-control{
+  resize: vertical;
+}
+// 单选复选框
+.checkbox, .radio{
+  cursor: pointer;
+}
+// 验证码
+.form-vcode{
+  height: @control-height;
+  padding-left: 5px;
+  vertical-align: top;
+}
+// 备注信息
+.form-control-note{
+  padding-left: 10px;
+  font-size: 14px;
 }
 // 行内表单
 .form-inline{

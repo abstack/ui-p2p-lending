@@ -1,0 +1,38 @@
+.filter{
+  @line-height: 42px;
+  margin: 0;
+  .clearfix;
+  dt,dd{
+    margin-right: 10px;
+    float: left;
+    color: #333;
+    height: @line-height;
+    line-height: @line-height;
+  }
+  dt{
+    clear: left;
+    font-weight: bold;
+  }
+  dd{
+    font-size: 14px;
+    margin-left: 0;
+    .form-control{
+      margin-left: 0;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    a{
+      padding: 4px 8px;
+      text-decoration: none;
+      color: #555;
+      .border-radius(3px);
+      &:hover{
+        color: #333;
+        background-color: #eee;
+      }
+    }
+    &.active a{
+      background-color: #ddd;
+    }
+  }
+}
