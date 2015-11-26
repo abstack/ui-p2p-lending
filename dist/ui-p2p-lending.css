@@ -719,6 +719,11 @@ a.button {
 .button.button-dark:active {
   background-color: #080808;
 }
+.button.button-block {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
 .form-group {
   margin-top: 10px;
 }
