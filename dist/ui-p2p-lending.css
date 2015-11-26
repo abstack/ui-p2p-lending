@@ -607,12 +607,12 @@ a.button {
 .button:hover {
   background-color: #f2f2f2;
 }
-.button:active {
-  background-color: #d4d4d4;
-}
 .button:focus {
   background-color: #f2f2f2;
   border-color: #b8b8b8;
+}
+.button:active {
+  background-color: #d4d4d4;
 }
 .button.button-danger {
   color: #fff;
@@ -622,12 +622,12 @@ a.button {
 .button.button-danger:hover {
   background-color: #ff2d2d;
 }
-.button.button-danger:active {
-  background-color: #ef0000;
-}
 .button.button-danger:focus {
   background-color: #ff2d2d;
   border-color: #b70000;
+}
+.button.button-danger:active {
+  background-color: #ef0000;
 }
 .button.button-warning {
   color: #fff;
@@ -637,12 +637,12 @@ a.button {
 .button.button-warning:hover {
   background-color: #ffa12b;
 }
-.button.button-warning:active {
-  background-color: #ed8300;
-}
 .button.button-warning:focus {
   background-color: #ffa12b;
   border-color: #b56400;
+}
+.button.button-warning:active {
+  background-color: #ed8300;
 }
 .button.button-calm {
   color: #fff;
@@ -652,12 +652,12 @@ a.button {
 .button.button-calm:hover {
   background-color: #1fb5fd;
 }
-.button.button-calm:active {
-  background-color: #0295dc;
-}
 .button.button-calm:focus {
   background-color: #1fb5fd;
   border-color: #0270a5;
+}
+.button.button-calm:active {
+  background-color: #0295dc;
 }
 .button.button-dream {
   color: #fff;
@@ -667,12 +667,12 @@ a.button {
 .button.button-dream:hover {
   background-color: #8a63ec;
 }
-.button.button-dream:active {
-  background-color: #612de6;
-}
 .button.button-dream:focus {
   background-color: #8a63ec;
   border-color: #4817c3;
+}
+.button.button-dream:active {
+  background-color: #612de6;
 }
 .button.button-cute {
   color: #fff;
@@ -682,12 +682,12 @@ a.button {
 .button.button-cute:hover {
   background-color: #ff68a0;
 }
-.button.button-cute:active {
-  background-color: #ff2b79;
-}
 .button.button-cute:focus {
   background-color: #ff68a0;
   border-color: #f20059;
+}
+.button.button-cute:active {
+  background-color: #ff2b79;
 }
 .button.button-growth {
   color: #fff;
@@ -697,12 +697,12 @@ a.button {
 .button.button-growth:hover {
   background-color: #83b831;
 }
-.button.button-growth:active {
-  background-color: #618724;
-}
 .button.button-growth:focus {
   background-color: #83b831;
   border-color: #415b18;
+}
+.button.button-growth:active {
+  background-color: #618724;
 }
 .button.button-dark {
   color: #fff;
@@ -712,12 +712,12 @@ a.button {
 .button.button-dark:hover {
   background-color: #262626;
 }
-.button.button-dark:active {
-  background-color: #080808;
-}
 .button.button-dark:focus {
   background-color: #262626;
   border-color: #000000;
+}
+.button.button-dark:active {
+  background-color: #080808;
 }
 .form-group {
   margin-top: 10px;
