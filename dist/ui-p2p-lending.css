@@ -729,12 +729,12 @@ a.button {
 }
 .form-group label {
   color: #333;
-  margin-right: 10px;
 }
 .form-group label[class^=col-] {
   padding-top: 11px;
 }
 .form-group .form-control {
+  margin-left: 10px;
   width: 200px;
   padding: 10px 5px;
   color: #333;
@@ -768,9 +768,12 @@ a.button {
   -ms-border-radius: 0;
   border-radius: 0;
 }
+.form-group textarea.form-control {
+  resize: vertical;
+}
 .form-group .checkbox,
 .form-group .radio {
-  margin-right: 10px;
+  margin-left: 10px;
   cursor: pointer;
 }
 .form-group .form-vcode {
@@ -820,6 +823,9 @@ a.button {
 }
 .form-group.form-group-warning .form-control:focus {
   border-color: #ffac45;
+}
+.form-group .button {
+  margin-left: 10px;
 }
 .form-inline .form-group {
   display: inline-block;

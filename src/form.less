@@ -4,12 +4,12 @@
   margin-top: 10px;
   label{
     color: #333;
-    margin-right: 10px;
     &[class^=col-]{
       padding-top: @vgap + 1;
     }
   }
   .form-control{
+    margin-left: 10px;
     width: 200px;
     padding: @vgap 5px;
     color: #333;
@@ -40,9 +40,13 @@
     background-color: #fff;
     .border-radius(0);
   }
+  // 文本域
+  textarea.form-control{
+    resize: vertical;
+  }
   // 单选复选框
   .checkbox, .radio{
-    margin-right: 10px;
+    margin-left: 10px;
     cursor: pointer;
   }
   // 验证码
@@ -95,6 +99,9 @@
         border-color: @c-warning;
       }
     }
+  }
+  .button{
+    margin-left: 10px;
   }
 }
 // 行内表单
