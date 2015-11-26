@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>UI P2P Lending</title>
-  <link rel="stylesheet" href="dist/ui-p2p-lending.css">
+  <link rel="stylesheet" href="/dist/ui-p2p-lending.css">
   <style>
     body{
-      margin: 0;
       background-color: #f3f3f3;
     }
     .component-wrapper{
@@ -30,6 +29,7 @@
       margin: 30px 0;
       padding: 30px 15px 0;
       color: #62635F;
+      word-break: break-word;
       background-color: #EBE8DE;
       border: 1px solid #C3C1B9;
     }
@@ -97,6 +97,39 @@
     </pre>
   </div>
   <div class="component-wrapper">
+    <h2 class="component-title">文字样式</h2>
+    <h3 class="component-desc text-dark">颜色（可在<code>settings.less</code>中进行配置）：</h3>
+    <span class="text-danger">text-danger 危险</span>
+    <span class="text-warning">text-warning 警告</span>
+    <span class="text-calm">text-calm 冷静</span>
+    <span class="text-dream">text-dream 梦幻</span>
+    <span class="text-cute">text-cute 可爱</span>
+    <span class="text-growth">text-growth 生长</span>
+    <span class="text-dark">text-dark 黑暗</span>
+    <h3 class="component-desc text-dark">对齐方式：</h3>
+    <p class="text-left">text-left 靠左对齐</p>
+    <p class="text-center">text-center 居中对齐</p>
+    <p class="text-right">text-right 靠右对齐</p>
+    <p class="text-indent">text-indent 首行缩进两个字符</p>
+    <p class="text-ellipsis">text-ellipsis CSS 3省略号：文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号</p>
+    <pre class="component-code">
+&lt;h3 class="component-desc text-dark"&gt;颜色（可在 &lt;code&gt;settings.less&lt;/code&gt; 中进行配置）：&lt;/h3&gt;
+&lt;span class="text-danger"&gt;text-danger 危险&lt;/span&gt;
+&lt;span class="text-warning"&gt;text-warning 警告&lt;/span&gt;
+&lt;span class="text-calm"&gt;text-calm 冷静&lt;/span&gt;
+&lt;span class="text-dream"&gt;text-dream 梦幻&lt;/span&gt;
+&lt;span class="text-cute"&gt;text-cute 可爱&lt;/span&gt;
+&lt;span class="text-growth"&gt;text-growth 生长&lt;/span&gt;
+&lt;span class="text-dark"&gt;text-dark 黑暗&lt;/span&gt;
+&lt;h3 class="component-desc text-dark"&gt;对齐方式：&lt;/h3&gt;
+&lt;p class="text-left"&gt;text-left 靠左对齐&lt;/p&gt;
+&lt;p class="text-center"&gt;text-center 居中对齐&lt;/p&gt;
+&lt;p class="text-right"&gt;text-right 靠右对齐&lt;/p&gt;
+&lt;p class="text-indent"&gt;text-indent 首行缩进两个字符&lt;/p&gt;
+&lt;p class="text-ellipsis"&gt;text-ellipsis CSS 3省略号：文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号&lt;/p&gt;
+    </pre>
+  </div>
+  <div class="component-wrapper">
     <h2 class="component-title">标的组件</h2>
     <p class="component-desc">基本的标列表样式及布局，利用栅格系统可以对每个属性的宽度进行修改。</p>
     <div class="container">
@@ -119,7 +152,7 @@
               <strong class="project-attr-val">100000 <small>元</small></strong>
             </div>
             <div class="project-attr invest col-3">
-              <button>立即投标</button>
+              <a href="javascript:;" class="button button-danger">立即投标</a>
             </div>
           </div>
         </div>
@@ -150,5 +183,331 @@
 &lt;/div&gt;
     </pre>
   </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">按钮样式</h2>
+    <button class="button">默认按钮</button>
+    <button class="button button-danger">危险按钮</button>
+    <button class="button button-warning">警告按钮</button>
+    <button class="button button-calm">蓝色按钮</button>
+    <button class="button button-dream">紫色按钮</button>
+    <button class="button button-cute">粉色按钮</button>
+    <button class="button button-growth">绿色按钮</button>
+    <button class="button button-dark">黑色按钮</button>
+    <p>
+      <button class="button button-block button-calm">块级按钮</button>
+    </p>
+    <pre class="component-code">
+&lt;button class="button"&gt;默认按钮&lt;/button&gt;
+&lt;button class="button button-danger"&gt;危险按钮&lt;/button&gt;
+&lt;button class="button button-warning"&gt;警告按钮&lt;/button&gt;
+&lt;button class="button button-calm"&gt;蓝色按钮&lt;/button&gt;
+&lt;button class="button button-dream"&gt;紫色按钮&lt;/button&gt;
+&lt;button class="button button-cute"&gt;粉色按钮&lt;/button&gt;
+&lt;button class="button button-growth"&gt;绿色按钮&lt;/button&gt;
+&lt;p&gt;
+&lt;button class=" button-block button-calm"&gt;块级按钮&lt;/button&gt;
+&lt;/p&gt;
+    </pre>
+  </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">表单样式</h2>
+    <p class="component-desc">
+      除垂直排列的表单之外，给<code>form</code>加上<code>form-inline</code>的 className，则会以行内表单样式呈现。
+    </p>
+    <p class="component-desc">
+      表单可具备三种状态：错误（红色）、警告（橙色）、成功（绿色），给<code>form-group</code>分别加上<code>form-group-error</code>、<code>form-group-warning</code>、<code>form-group-success</code>即可显示对应状态。
+    </p>
+    <div class="container">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <form>
+          <div class="form-group form-group-error">
+            <label for="username" class="col-3 text-right">用户名：</label>
+            <input id="username" type="text" class="form-control">
+            <span class="form-control-note">*用户名为必填</span>
+          </div>
+          <div class="form-group">
+            <label for="username" class="col-3 text-right">上次登录时间：</label>
+            <input id="username" type="text" class="form-control" readonly="disabled" value="123">
+          </div>
+          <div class="form-group">
+            <label for="username" class="col-3 text-right">用户类型：</label>
+            <select id="username" class="form-control">
+              <option value="1">普通用户</option>
+              <option value="2">管理员</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="username" class="col-3 text-right">验证码：</label>
+            <input id="username" type="text" class="form-control form-control-small">
+            <a href="javascript:;">
+              <img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode">
+            </a>
+          </div>
+          <div class="form-group">
+            <div class="col-3"></div>
+            <label class="checkbox">
+              <input type="checkbox">
+              记住我一星期
+            </label>
+          </div>
+          <div class="form-group">
+            <div class="col-3"></div>
+            <label class="radio">
+              <input type="radio" name="sex">
+              男
+            </label>
+            <label class="radio">
+              <input type="radio" name="sex">
+              女
+            </label>
+          </div>
+          <div class="form-group">
+            <div class="col-3"></div>
+            <textarea class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="col-3"></div>
+            <button class="button button-calm">立即登录</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <pre class="component-code">
+&lt;div class="container"&gt;
+  &lt;div class="col-2"&gt;&lt;/div&gt;
+  &lt;div class="col-8"&gt;
+    &lt;form&gt;
+      &lt;div class="form-group form-group-error"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;用户名：&lt;/label&gt;
+        &lt;input id="username" type="text" class="form-control"&gt;
+        &lt;span class="form-control-note"&gt;*用户名为必填&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;上次登录时间：&lt;/label&gt;
+        &lt;input id="username" type="text" class="form-control" readonly="disabled" value="123"&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;用户类型：&lt;/label&gt;
+        &lt;select id="username" class="form-control"&gt;
+          &lt;option value="1"&gt;普通用户&lt;/option&gt;
+          &lt;option value="2"&gt;管理员&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;验证码：&lt;/label&gt;
+        &lt;input id="username" type="text" class="form-control form-control-small"&gt;
+        &lt;a href="javascript:;"&gt;
+          &lt;img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode"&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;div class="col-3"&gt;&lt;/div&gt;
+        &lt;label class="checkbox"&gt;
+          &lt;input type="checkbox"&gt;
+          记住我一星期
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;div class="col-3"&gt;&lt;/div&gt;
+        &lt;label class="radio"&gt;
+          &lt;input type="radio" name="sex"&gt;
+          男
+        &lt;/label&gt;
+        &lt;label class="radio"&gt;
+          &lt;input type="radio" name="sex"&gt;
+          女
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;div class="col-3"&gt;&lt;/div&gt;
+        &lt;button class="button button-calm"&gt;立即登录&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div class="col-2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+  </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">信息提示样式</h2>
+    <div class="caution-box">
+      默认提示
+    </div>
+    <div class="caution-box caution-danger">
+      危险提示
+    </div>
+    <div class="caution-box caution-warning">
+      警告提示
+    </div>
+    <div class="caution-box caution-info">
+      信息提示
+    </div>
+    <div class="caution-box caution-success">
+      成功提示
+    </div>
+    <pre class="component-code">
+&lt;div class="caution-box"&gt;
+  默认提示
+&lt;/div&gt;
+&lt;div class="caution-box caution-danger"&gt;
+  危险提示
+&lt;/div&gt;
+&lt;div class="caution-box caution-warning"&gt;
+  警告提示
+&lt;/div&gt;
+&lt;div class="caution-box caution-info"&gt;
+  信息提示
+&lt;/div&gt;
+&lt;div class="caution-box caution-success"&gt;
+  成功提示
+&lt;/div&gt;
+    </pre>
+  </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">表格组件</h2>
+    <p class="component-desc">
+      表格组件提供默认的表格样式去除了 collapse 及 spacing，并且给 th 添加了下边框。与此同时也提供了<code>table-bordered</code>className 给表格加上边框、<code>table-hover</code>给表格加上鼠标悬浮效果、<code>table-striped</code>使<code>tbody</code>中奇数行与偶数行的背景颜色不一致。
+    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>性别</th>
+          <th>年龄</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>男</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>小丽</td>
+          <td>女</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-bordered table-hover table-striped light-bg">
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>性别</th>
+          <th>年龄</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>男</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>小丽</td>
+          <td>女</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+    </table>
+    <pre class="component-code">
+&lt;table class="table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;姓名&lt;/th&gt;
+      &lt;th&gt;性别&lt;/th&gt;
+      &lt;th&gt;年龄&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;张三&lt;/td&gt;
+      &lt;td&gt;男&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;小丽&lt;/td&gt;
+      &lt;td&gt;女&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="table table-bordered table-hover table-striped light-bg"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;姓名&lt;/th&gt;
+      &lt;th&gt;性别&lt;/th&gt;
+      &lt;th&gt;年龄&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;张三&lt;/td&gt;
+      &lt;td&gt;男&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;小丽&lt;/td&gt;
+      &lt;td&gt;女&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+    </pre>
+  </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">选项卡切换样式</h2>
+    <p class="component-desc">给<code>tabs-header</code>中的<code>li</code>标签和对应的<code>tabs-content</code>加上<code>active</code>className 则会选中中该选项卡。</p>
+    <p class="component-desc">
+      <span class="text-danger">注：暂不支持点击切换不同的选项卡</span>
+    </p>
+    <div class="tabs">
+      <ul class="tabs-header">
+        <li class="active">
+          <a href="javascript:;">工作经历</a>
+        </li>
+        <li>
+          <a href="javascript:;">曾获荣誉</a>
+        </li>
+      </ul>
+      <div class="tabs-content active">
+        <p>2011 家里蹲大学</p>
+        <p>2012 车库研究院</p>
+        <p>2015 社会大学</p>
+      </div>
+      <div class="tabs-content">
+        <p>2011 家里蹲大学</p>
+        <p>2012 车库研究院</p>
+        <p>2015 社会大学</p>
+      </div>
+    </div>
+    <pre class="component-code">
+&lt;div class="tabs"&gt;
+  &lt;ul class="tabs-header"&gt;
+    &lt;li class="active"&gt;
+      &lt;a href="javascript:;"&gt;工作经历&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="javascript:;"&gt;曾获荣誉&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="tabs-content active"&gt;
+    &lt;p&gt;2011 家里蹲大学&lt;/p&gt;
+    &lt;p&gt;2012 车库研究院&lt;/p&gt;
+    &lt;p&gt;2015 社会大学&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="tabs-content"&gt;
+    &lt;p&gt;2011 家里蹲大学&lt;/p&gt;
+    &lt;p&gt;2012 车库研究院&lt;/p&gt;
+    &lt;p&gt;2015 社会大学&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+  </div>
+  <!-- Todo1: 标签组件，类似（http://v3.bootcss.com/components/#labels） -->
+  <!-- Todo2: 徽章组件，类似（http://v3.bootcss.com/components/#badges） -->
+  <!-- Todo3: 过滤筛选组件 -->
 </body>
 </html>

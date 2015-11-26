@@ -1,0 +1,38 @@
+.tabs{
+  .clearfix;
+  .tabs-header{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li{
+      float: left;
+      margin-right: -1px;
+      a{
+        display: block;
+        padding: 13px 25px;
+        color: #666;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        background-color: #f3f3f3;
+        &:hover{
+          background-color: #fafafa;
+        }
+      }
+      &.active a{
+        border-bottom-color: #fff;
+        background-color: #fff;
+      }
+    }
+  }
+  .tabs-content{
+    display: none;
+    margin-top: -1px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    &.active{
+      display: block;
+    }
+  }
+}

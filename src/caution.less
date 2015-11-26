@@ -1,0 +1,29 @@
+.caution-box{
+  margin: 15px 0;
+  padding: 10px 15px;
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  &.caution-danger{
+    color: darken(@c-danger, 18%);
+    background-color: lighten(@c-danger, 30%);
+    border-color: lighten(@c-danger, 22%)
+  }
+  &.caution-warning{
+    color: darken(@c-warning, 18%);
+    background-color: lighten(@c-warning, 30%);
+    border-color: lighten(@c-warning, 12%)
+  }
+  &.caution-info{
+    color: darken(@c-calm, 18%);
+    background-color: lighten(@c-calm, 30%);
+    border-color: lighten(@c-calm, 16%)
+  }
+  &.caution-success{
+    color: darken(@c-growth, 18%);
+    background-color: lighten(@c-growth, 30%);
+    border-color: lighten(@c-growth, 10%)
+  }
+}
