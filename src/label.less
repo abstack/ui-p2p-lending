@@ -1,0 +1,67 @@
+@label-size: 30px;
+@label-radius: 10px;
+@label-background: #fff;
+
+.label{
+  padding: 10px 15px;
+  color: @c-calm;
+  font-size: @label-size;
+  background: @label-background;
+  -moz-border-radius: @label-radius;      /* Gecko browsers */
+  -webkit-border-radius: @label-radius;   /* Webkit browsers */
+    .label-handle-produce(@label-background);
+  &.label-danger{
+    color: #fff;
+    background-color: @c-danger;
+    .label-handle-produce(@c-danger);
+  }
+  &.label-warning{
+    color: #fff;
+    background-color: @c-warning;
+    .label-handle-produce(@c-warning);
+  }
+  &.label-calm{
+    color: #fff;
+    background-color: @c-calm;
+    .label-handle-produce(@c-calm);
+  }
+  &.label-dream{
+    color: #fff;
+    background-color: @c-dream;
+    .label-handle-produce(@c-dream);
+  }
+  &.label-cute{
+    color: #fff;
+    background-color: @c-cute;
+    .label-handle-produce(@c-cute);
+  }
+  &.label-growth{
+    color: #fff;
+    background-color: @c-growth;
+    .label-handle-produce(@c-growth);
+  }
+  &.label-dark{
+    color: #fff;
+    background-color: @c-dark;
+    .label-handle-produce(@c-dark);
+  }
+  &.label-block{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.label-handle-produce(@color){
+  border-color: darken(@color, 15%);
+  &:hover{
+    background-color: darken(@color, 5%);
+  }
+  &:focus{
+    background-color: darken(@color, 5%);
+    border-color: darken(@color, 28%);
+  }
+  &:active{
+    background-color: darken(@color, 17%);
+  }
+}
