@@ -1,0 +1,16 @@
+.badge{
+  @badge-size: 20px;
+  width: @badge-size;
+  height: @badge-size;
+  display: inline-block;
+  text-align: center;
+  line-height: @badge-size;
+  margin-left: 8px;
+  color: #fff;
+  font-size: 14px;
+  background: #999;
+  .border-radius(50%);
+  &:empty{
+    display: none;
+  }
+}
