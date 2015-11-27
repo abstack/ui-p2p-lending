@@ -1,0 +1,41 @@
+.label{
+  @label-size: 14px;
+  @label-radius: 7px;
+  @label-background: #fff;
+
+  padding: 10px 15px;
+  color: @c-calm;
+  font-size: @label-size;
+  background: @label-background;
+  -moz-border-radius: @label-radius;      /* Gecko browsers */
+  -webkit-border-radius: @label-radius;   /* Webkit browsers */
+
+  &.label-danger{
+    color: #fff;
+    background-color: @c-danger;
+  }
+  &.label-warning{
+    color: #fff;
+    background-color: @c-warning;
+  }
+  &.label-calm{
+    color: #fff;
+    background-color: @c-calm;
+  }
+  &.label-dream{
+    color: #fff;
+    background-color: @c-dream;
+  }
+  &.label-cute{
+    color: #fff;
+    background-color: @c-cute;
+  }
+  &.label-growth{
+    color: #fff;
+    background-color: @c-growth;
+  }
+  &.label-dark{
+    color: #fff;
+    background-color: @c-dark;
+  }
+}
