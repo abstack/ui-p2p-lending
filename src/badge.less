@@ -1,0 +1,18 @@
+.badge{
+  @badge-radius: 20px;
+  width: @badge-radius;
+  height: @badge-radius;
+  display: inline-block;
+  text-align: center;
+  line-height: @badge-radius;
+  margin-left: 8px;
+  color: #fff;
+  font-size: 14px;
+  background: #999;
+  -moz-border-radius: 50%;      /* Gecko browsers */
+  -webkit-border-radius: 50%;   /* Webkit browsers */
+
+  &:empty{
+    display: none;
+  }
+}
