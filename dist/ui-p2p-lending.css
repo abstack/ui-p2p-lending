@@ -424,6 +424,7 @@ th {
 }
 
 /*圆角*/
+/*透明度*/
 .clearfix:after,
 .clearfix:before {
   display: table;
@@ -985,4 +986,51 @@ textarea.form-control {
 }
 .filter dd.active a {
   background-color: #ddd;
+}
+.pagination {
+  padding: 15px 0;
+  color: #666;
+}
+.pagination:after,
+.pagination:before {
+  display: table;
+  content: '';
+  clear: both;
+}
+.pagination a,
+.pagination span {
+  margin: 0 2px;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.pagination a.disabled,
+.pagination span.disabled {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  cursor: not-allowed;
+}
+.pagination a.disabled:hover,
+.pagination span.disabled:hover,
+.pagination a.disabled:focus,
+.pagination span.disabled:focus,
+.pagination a.disabled:active,
+.pagination span.disabled:active {
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.pagination a {
+  text-decoration: none;
+  outline: none;
+}
+.pagination a:hover {
+  background-color: #fafafa;
+}
+.pagination a:focus {
+  border-color: #ccc;
+}
+.pagination a:active {
+  background-color: #eaeaea;
 }

@@ -551,8 +551,31 @@
 &lt;/dl&gt;
     </pre>
   </div>
+  <div class="component-wrapper">
+    <h2 class="component-title">翻页按钮样式</h2>
+    <p class="component-desc">可以通过<code>text-center</code>和<code>text-right</code>使翻页器居中或靠右。</p><p class="component-desc">给其中的<code>a</code>、<code>span</code>标签添加<code>disabled</code>className 可以使其显示被禁用的样式，<span class="text-danger">但点击事件并不能真正的被禁用</span>。</p>
+    <div class="pagination text-center">
+      <a href="javascript:;" class="disabled">上一页</a>
+      <a href="javascript:;">1</a>
+      <a href="javascript:;">2</a>
+      <a href="javascript:;">3</a>
+      ...
+      <a href="javascript:;">20</a>
+      <a href="javascript:;">下一页</a>
+    </div>
+    <pre class="component-code">
+&lt;div class="pagination text-center"&gt;
+  &lt;a href="javascript:;" class="disabled"&gt;上一页&lt;/a&gt;
+  &lt;a href="javascript:;"&gt;1&lt;/a&gt;
+  &lt;a href="javascript:;"&gt;2&lt;/a&gt;
+  &lt;a href="javascript:;"&gt;3&lt;/a&gt;
+  ...
+  &lt;a href="javascript:;"&gt;20&lt;/a&gt;
+  &lt;a href="javascript:;"&gt;下一页&lt;/a&gt;
+&lt;/div&gt;
+    </pre>
+  </div>
   <!-- Todo1: 标签组件，类似（http://v3.bootcss.com/components/#labels） -->
   <!-- Todo2: 徽章组件，类似（http://v3.bootcss.com/components/#badges） -->
-  <!-- Todo3: 过滤筛选组件 -->
 </body>
 </html>

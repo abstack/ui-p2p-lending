@@ -6,3 +6,8 @@
   -ms-border-radius: @value;
   border-radius: @value;
 }
+/*透明度*/
+.opacity(@value){
+  opacity: @value/100;
+  filter: ~"alpha(opacity=@{value})";
+}
