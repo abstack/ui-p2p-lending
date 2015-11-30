@@ -434,6 +434,11 @@ th {
 *.light-bg {
   background-color: #fff;
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -459,7 +464,6 @@ th {
 .container .col-12 {
   float: left;
   min-height: 1px;
-  box-sizing: border-box;
 }
 .container .col-1 {
   width: 8.33333333%;
@@ -723,7 +727,6 @@ a.button {
 .button.button-block {
   display: block;
   width: 100%;
-  box-sizing: border-box;
 }
 .form-group {
   margin-top: 10px;
@@ -789,7 +792,6 @@ a.button {
   color: #333;
   border: 1px solid #ccc;
   outline: none;
-  box-sizing: border-box;
 }
 .form-control:focus {
   border-color: #38bdfd;
@@ -835,6 +837,45 @@ textarea.form-control {
 }
 .form-inline .form-group {
   display: inline-block;
+}
+.input-group {
+  position: relative;
+  left: 10px;
+  display: table;
+  width: 200px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.input-group > .form-control,
+.input-group .input-group-addon {
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+}
+.input-group > .form-control {
+  width: 100%;
+}
+.input-group .input-group-addon {
+  width: 1%;
+  padding: 0 8px;
+  color: #666;
+  white-space: nowrap;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+}
+.input-group .input-group-addon:first-child {
+  border-right: 0;
+}
+.input-group .input-group-addon:last-child {
+  border-left: 0;
+}
+.input-group .input-group-addon > .form-control {
+  margin: 0;
+  width: auto;
+  height: 100%;
+  color: #666;
+  border: 0;
+  background-color: transparent;
 }
 .caution-box {
   margin: 15px 0;
@@ -1033,4 +1074,84 @@ textarea.form-control {
 }
 .pagination a:active {
   background-color: #eaeaea;
+}
+.label {
+  padding: 4px 6px;
+  color: #fff;
+  font-size: 14px;
+  background: #999;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+.label.label-danger {
+  background-color: #ff4747;
+}
+.label.label-warning {
+  background-color: #ffac45;
+}
+.label.label-calm {
+  background-color: #38bdfd;
+}
+.label.label-dream {
+  background-color: #9b7aef;
+}
+.label.label-cute {
+  background-color: #ff82b0;
+}
+.label.label-growth {
+  background-color: #91ca38;
+}
+.label.label-dark {
+  background-color: #333333;
+}
+.badge {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  display: inline-block;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.badge:empty {
+  display: none;
+}
+.badge.badge-danger {
+  color: #fff;
+  background-color: #ff4747;
+}
+.badge.badge-warning {
+  color: #fff;
+  background-color: #ffac45;
+}
+.badge.badge-calm {
+  color: #fff;
+  background-color: #38bdfd;
+}
+.badge.badge-dream {
+  color: #fff;
+  background-color: #9b7aef;
+}
+.badge.badge-cute {
+  color: #fff;
+  background-color: #ff82b0;
+}
+.badge.badge-growth {
+  color: #fff;
+  background-color: #91ca38;
+}
+.badge.badge-dark {
+  color: #fff;
+  background-color: #333333;
 }
