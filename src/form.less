@@ -64,7 +64,6 @@
   color: #333;
   border: 1px solid #ccc;
   outline: none;
-  box-sizing: border-box;
   &:focus{
     border-color: @c-calm;
   }
@@ -112,5 +111,44 @@ textarea.form-control{
 .form-inline{
   .form-group{
     display: inline-block;
+  }
+}
+// 输入框组
+.input-group{
+  position: relative;
+  left: 10px;
+  display: table;
+  width: 200px;
+  border-collapse: separate;
+  border-spacing: 0;
+  > .form-control, .input-group-addon{
+    display: table-cell;
+    margin: 0;
+    vertical-align: middle;
+  }
+  > .form-control{
+    width: 100%;
+  }
+  .input-group-addon{
+    width: 1%;
+    padding: 0 8px;
+    color: #666;
+    white-space: nowrap;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    &:first-child{
+      border-right: 0;
+    }
+    &:last-child{
+      border-left: 0;
+    }
+    > .form-control{
+      margin: 0;
+      width: auto;
+      height: 100%;
+      color: #666;
+      border: 0;
+      background-color: transparent;
+    }
   }
 }

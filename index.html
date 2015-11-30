@@ -228,7 +228,22 @@
           </div>
           <div class="form-group">
             <label for="username" class="col-3 text-right">上次登录时间：</label>
-            <input id="username" type="text" class="form-control" readonly="disabled" value="123">
+            <div class="input-group">
+              <input id="username" type="text" class="form-control" readonly="readonly" value="123">
+              <span class="input-group-addon">只读</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="username" class="col-3 text-right">登录状态保存：</label>
+            <div class="input-group">
+              <input id="username" type="text" class="form-control" value="1">
+              <span class="input-group-addon">
+                <select class="form-control">
+                  <option value="1">天</option>
+                  <option value="2">个月</option>
+                </select>
+              </span>
+            </div>
           </div>
           <div class="form-group">
             <label for="username" class="col-3 text-right">用户类型：</label>
@@ -286,7 +301,22 @@
       &lt;/div&gt;
       &lt;div class="form-group"&gt;
         &lt;label for="username" class="col-3 text-right"&gt;上次登录时间：&lt;/label&gt;
-        &lt;input id="username" type="text" class="form-control" readonly="disabled" value="123"&gt;
+        &lt;div class="input-group"&gt;
+          &lt;input id="username" type="text" class="form-control" readonly="readonly" value="123"&gt;
+          &lt;span class="input-group-addon"&gt;只读&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;label for="username" class="col-3 text-right"&gt;登录状态保存：&lt;/label&gt;
+        &lt;div class="input-group"&gt;
+          &lt;input id="username" type="text" class="form-control" value="1"&gt;
+          &lt;span class="input-group-addon"&gt;
+            &lt;select class="form-control"&gt;
+              &lt;option value="1"&gt;天&lt;/option&gt;
+              &lt;option value="2"&gt;个月&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class="form-group"&gt;
         &lt;label for="username" class="col-3 text-right"&gt;用户类型：&lt;/label&gt;
@@ -319,6 +349,10 @@
           &lt;input type="radio" name="sex"&gt;
           女
         &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="form-group"&gt;
+        &lt;div class="col-3"&gt;&lt;/div&gt;
+        &lt;textarea class="form-control"&gt;&lt;/textarea&gt;
       &lt;/div&gt;
       &lt;div class="form-group"&gt;
         &lt;div class="col-3"&gt;&lt;/div&gt;
