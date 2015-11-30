@@ -2,15 +2,44 @@
   @badge-size: 20px;
   width: @badge-size;
   height: @badge-size;
-  display: inline-block;
-  text-align: center;
-  line-height: @badge-size;
   margin-left: 8px;
-  color: #fff;
+  display: inline-block;
+  color: #666;
   font-size: 14px;
-  background: #999;
+  text-align: center;
+  vertical-align: middle;
+  line-height: @badge-size;
+  background: #fff;
   .border-radius(50%);
   &:empty{
     display: none;
+  }
+  &.badge-danger{
+    color: #fff;
+    background-color: @c-danger;
+  }
+  &.badge-warning{
+    color: #fff;
+    background-color: @c-warning;
+  }
+  &.badge-calm{
+    color: #fff;
+    background-color: @c-calm;
+  }
+  &.badge-dream{
+    color: #fff;
+    background-color: @c-dream;
+  }
+  &.badge-cute{
+    color: #fff;
+    background-color: @c-cute;
+  }
+  &.badge-growth{
+    color: #fff;
+    background-color: @c-growth;
+  }
+  &.badge-dark{
+    color: #fff;
+    background-color: @c-dark;
   }
 }

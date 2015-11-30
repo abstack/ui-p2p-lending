@@ -577,7 +577,7 @@
   </div>
   <!-- Todo1: 标签组件，类似（http://v3.bootcss.com/components/#labels） -->
   <div class="component-wrapper">
-    <h2 class="component-title">标签系统</h2>
+    <h2 class="component-title">标签组件</h2>
     <p class="component-desc">加上label属性便变成一个标签，自动调整大小</p>
     <span class="label">New</span>
     <span class="label label-danger">New</span>
@@ -596,15 +596,27 @@
   </div>
   <!-- Todo2: 徽章组件，类似（http://v3.bootcss.com/components/#badges） -->
   <div class="component-wrapper">
-    <h2 class="component-title">徽章系统</h2>
+    <h2 class="component-title">徽章组件</h2>
     <p class="component-desc">分别为普通状态，在按钮中的状态。当不存在值时，就隐藏</p>
-    <span class="badge">2</span>
-    <span class="label label-calm">New<span class="badge">2</span></span>
-    <span class="label label-calm">New<span class="badge"></span></span>
+    <p>
+      <span class="badge badge-danger">2</span>
+      <span class="badge badge-warning">2</span>
+      <span class="badge badge-calm">2</span>
+      <span class="badge badge-cute">2</span>
+      <span class="badge badge-growth">2</span>
+      <span class="badge badge-dark">2</span>
+    </p>
+    <button class="button button-danger">新消息<span class="badge">99</span></button>
     <pre class="component-code">
-      &lt;span class="badge"&gt;2&lt;/span&gt;
-      &lt;span class="label label-calm"&gt;New&lt;span class="badge"&gt;2&lt;/span&gt;&lt;/span&gt;
-      &lt;span class="label label-calm"&gt;New&lt;span class="badge"&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;
+  &lt;span class="badge badge-danger"&gt;2&lt;/span&gt;
+  &lt;span class="badge badge-warning"&gt;2&lt;/span&gt;
+  &lt;span class="badge badge-calm"&gt;2&lt;/span&gt;
+  &lt;span class="badge badge-cute"&gt;2&lt;/span&gt;
+  &lt;span class="badge badge-growth"&gt;2&lt;/span&gt;
+  &lt;span class="badge badge-dark"&gt;2&lt;/span&gt;
+&lt;/p&gt;
+&lt;button class="button button-danger"&gt;新消息&lt;span class="badge"&gt;99&lt;/span&gt;&lt;/button&gt;
     </pre>
   </div>
 </body>
