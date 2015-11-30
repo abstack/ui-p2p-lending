@@ -1,25 +1,25 @@
 {
-  "name": "default",
+  "name": "ui-p2p-lending",
   "version": "1.0.0",
-  "description": "Default template for fis scaffold",
-  "main": "index.js",
+  "description": "The UI framework for p2p lending",
+  "main": "fis-conf.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "fis3 server start&&fis3 release -wL"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fis-scaffold/default.git"
+    "url": "https://github.com/PeachScript/ui-p2p-lending.git"
   },
-  "keywords": [
-    "fis",
-    "scaffold"
-  ],
-  "author": "fex",
-  "license": "BSD",
+  "keywords": [],
+  "author": "Peach<scdzwyxst@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fis-scaffold/default/issues"
+    "url": "https://github.com/PeachScript/ui-p2p-lending/issues"
   },
-  "homepage": "https://github.com/fis-scaffold/default",
+  "homepage": "https://github.com/PeachScript/ui-p2p-lending",
   "dependencies": {
+    "fis-parser-less": "^0.1.3",
+    "fis3": "^3.3.0"
   }
 }
