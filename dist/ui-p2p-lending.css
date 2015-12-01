@@ -866,11 +866,12 @@ a.button {
   border-color: #38bdfd;
 }
 .form-control[disabled] {
-  color: #666;
+  color: #999;
   background-color: #f3f3f3;
   cursor: not-allowed;
 }
 .form-control[readonly] {
+  color: #999;
   background-color: #f3f3f3;
 }
 .form-control.form-control-small {
