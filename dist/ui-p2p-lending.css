@@ -1077,8 +1077,7 @@ textarea.form-control {
 }
 .filter dd .form-control {
   margin-left: 0;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  max-height: 36px;
 }
 .filter dd a {
   padding: 4px 8px;
