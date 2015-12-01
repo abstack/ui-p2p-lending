@@ -794,6 +794,12 @@ a.button {
 .form-group {
   margin-top: 10px;
 }
+.form-group:after,
+.form-group:before {
+  display: table;
+  content: '';
+  clear: both;
+}
 .form-group label {
   color: #333;
 }
