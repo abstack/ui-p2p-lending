@@ -560,40 +560,103 @@ th {
 .project-list .project-item .project-attr.invest {
   padding-top: 25px;
 }
-*.text-danger {
+.text-danger {
   color: #ff4747;
 }
-*.text-warning {
+a.text-danger {
+  text-decoration: none;
+}
+a.text-danger:hover {
+  text-decoration: underline;
+}
+a.text-danger:active {
+  color: #ff1414;
+}
+.text-warning {
   color: #ffac45;
 }
-*.text-calm {
+a.text-warning {
+  text-decoration: none;
+}
+a.text-warning:hover {
+  text-decoration: underline;
+}
+a.text-warning:active {
+  color: #ff9512;
+}
+.text-calm {
   color: #38bdfd;
 }
-*.text-dream {
+a.text-calm {
+  text-decoration: none;
+}
+a.text-calm:hover {
+  text-decoration: underline;
+}
+a.text-calm:active {
+  color: #06acfc;
+}
+.text-dream {
   color: #9b7aef;
 }
-*.text-cute {
+a.text-dream {
+  text-decoration: none;
+}
+a.text-dream:hover {
+  text-decoration: underline;
+}
+a.text-dream:active {
+  color: #794cea;
+}
+.text-cute {
   color: #ff82b0;
 }
-*.text-growth {
+a.text-cute {
+  text-decoration: none;
+}
+a.text-cute:hover {
+  text-decoration: underline;
+}
+a.text-cute:active {
+  color: #ff4f90;
+}
+.text-growth {
   color: #91ca38;
 }
-*.text-dark {
+a.text-growth {
+  text-decoration: none;
+}
+a.text-growth:hover {
+  text-decoration: underline;
+}
+a.text-growth:active {
+  color: #75a32c;
+}
+.text-dark {
   color: #333333;
 }
-*.text-center {
+a.text-dark {
+  text-decoration: none;
+}
+a.text-dark:hover {
+  text-decoration: underline;
+}
+a.text-dark:active {
+  color: #1a1a1a;
+}
+.text-center {
   text-align: center;
 }
-*.text-right {
+.text-right {
   text-align: right;
 }
-*.text-left {
+.text-left {
   text-align: left;
 }
-*.text-indent {
+.text-indent {
   text-indent: 2em;
 }
-*.text-ellipsis {
+.text-ellipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
