@@ -867,6 +867,11 @@ a.button {
   color: #333;
   border: 1px solid #ccc;
   outline: none;
+  -webkit-transition: background-color .3s, border .3s;
+  -o-transition: background-color .3s, border .3s;
+  -moz-transition: background-color .3s, border .3s;
+  -ms-transition: background-color .3s, border .3s;
+  transition: background-color .3s, border .3s;
 }
 .form-control:focus {
   border-color: #38bdfd;
