@@ -425,6 +425,7 @@ th {
 
 /*圆角*/
 /*透明度*/
+/*过渡*/
 .clearfix:after,
 .clearfix:before {
   display: table;
@@ -670,6 +671,11 @@ a.button {
   border: 1px solid;
   background-color: #fff;
   outline: none;
+  -webkit-transition: background-color .2s, border .2s;
+  -o-transition: background-color .2s, border .2s;
+  -moz-transition: background-color .2s, border .2s;
+  -ms-transition: background-color .2s, border .2s;
+  transition: background-color .2s, border .2s;
   border-color: #d9d9d9;
 }
 .button:hover {
