@@ -943,6 +943,7 @@ textarea.form-control {
   white-space: nowrap;
   background-color: #fafafa;
   border: 1px solid #ccc;
+  overflow: hidden;
 }
 .input-group .input-group-addon:first-child {
   border-right: 0;
