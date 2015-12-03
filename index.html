@@ -231,16 +231,25 @@
             <span class="form-control-note">*用户名为必填</span>
           </div>
           <div class="form-group">
-            <label for="username" class="col-3 text-right">上次登录时间：</label>
+            <label for="lasttime" class="col-3 text-right">上次登录时间：</label>
             <div class="input-group">
-              <input id="username" type="text" class="form-control" readonly="readonly" value="123">
+              <input id="lasttime" type="text" class="form-control" readonly="readonly" value="123">
               <span class="input-group-addon">只读</span>
             </div>
           </div>
           <div class="form-group">
-            <label for="username" class="col-3 text-right">登录状态保存：</label>
+            <label for="mobile_vcode" class="col-3 text-right">手机验证码：</label>
             <div class="input-group">
-              <input id="username" type="text" class="form-control" value="1">
+              <input id="mobile_vcode" type="text" class="form-control" readonly="readonly" value="123">
+              <span class="input-group-addon input-group-addon-button">
+                <button class="button" type="button">发送验证码</button>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="status-saved" class="col-3 text-right">登录状态保存：</label>
+            <div class="input-group">
+              <input id="status-saved" type="text" class="form-control" value="1">
               <span class="input-group-addon">
                 <select class="form-control">
                   <option value="1">天</option>
@@ -250,15 +259,15 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="username" class="col-3 text-right">用户类型：</label>
-            <select id="username" class="form-control">
+            <label for="usertype" class="col-3 text-right">用户类型：</label>
+            <select id="usertype" class="form-control">
               <option value="1">普通用户</option>
               <option value="2">管理员</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="username" class="col-3 text-right">验证码：</label>
-            <input id="username" type="text" class="form-control form-control-small">
+            <label for="vcode" class="col-3 text-right">验证码：</label>
+            <input id="vcode" type="text" class="form-control form-control-small">
             <a href="javascript:;">
               <img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode">
             </a>

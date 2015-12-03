@@ -959,6 +959,15 @@ textarea.form-control {
   border: 0;
   background-color: transparent;
 }
+.input-group .input-group-addon.input-group-addon-button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.input-group .input-group-addon.input-group-addon-button .button {
+  margin: 0;
+  border-left: 0;
+}
 .caution-box {
   margin: 15px 0;
   padding: 10px 15px;
