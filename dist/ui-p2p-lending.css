@@ -978,7 +978,8 @@ textarea.form-control {
   background-color: #fff;
   border: 1px solid #ddd;
 }
-.caution-box.caution-danger {
+.caution-box.caution-danger,
+.caution-box.caution-error {
   color: #ea0000;
   background-color: #ffe0e0;
   border-color: #ffb7b7;
@@ -1345,19 +1346,24 @@ textarea.form-control {
   color: #38bdfd;
   background-color: #fff;
 }
-.prompt-box-queue .prompt-box.prompt-danger {
+.prompt-box-queue .prompt-box.prompt-danger,
+.prompt-box-queue .prompt-box.prompt-error {
   background-color: #ff4747;
   border-color: #ff1e1e;
 }
 .prompt-box-queue .prompt-box.prompt-danger h3,
-.prompt-box-queue .prompt-box.prompt-danger p {
+.prompt-box-queue .prompt-box.prompt-error h3,
+.prompt-box-queue .prompt-box.prompt-danger p,
+.prompt-box-queue .prompt-box.prompt-error p {
   color: #fff;
 }
-.prompt-box-queue .prompt-box.prompt-danger .prompt-icon {
+.prompt-box-queue .prompt-box.prompt-danger .prompt-icon,
+.prompt-box-queue .prompt-box.prompt-error .prompt-icon {
   color: #ff4747;
   background-color: #fff;
 }
-.prompt-box-queue .prompt-box.prompt-danger .prompt-icon:before {
+.prompt-box-queue .prompt-box.prompt-danger .prompt-icon:before,
+.prompt-box-queue .prompt-box.prompt-error .prompt-icon:before {
   content: '×';
 }
 .prompt-box-queue .prompt-box.prompt-success {
