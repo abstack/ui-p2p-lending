@@ -1345,19 +1345,19 @@ textarea.form-control {
   color: #38bdfd;
   background-color: #fff;
 }
-.prompt-box-queue .prompt-box.prompt-error {
+.prompt-box-queue .prompt-box.prompt-danger {
   background-color: #ff4747;
   border-color: #ff1e1e;
 }
-.prompt-box-queue .prompt-box.prompt-error h3,
-.prompt-box-queue .prompt-box.prompt-error p {
+.prompt-box-queue .prompt-box.prompt-danger h3,
+.prompt-box-queue .prompt-box.prompt-danger p {
   color: #fff;
 }
-.prompt-box-queue .prompt-box.prompt-error .prompt-icon {
+.prompt-box-queue .prompt-box.prompt-danger .prompt-icon {
   color: #ff4747;
   background-color: #fff;
 }
-.prompt-box-queue .prompt-box.prompt-error .prompt-icon:before {
+.prompt-box-queue .prompt-box.prompt-danger .prompt-icon:before {
   content: '×';
 }
 .prompt-box-queue .prompt-box.prompt-success {
