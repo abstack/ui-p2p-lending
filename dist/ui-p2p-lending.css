@@ -426,6 +426,7 @@ th {
 /*圆角*/
 /*透明度*/
 /*过渡*/
+/*盒子阴影*/
 .clearfix:after,
 .clearfix:before {
   display: table;
@@ -1244,4 +1245,133 @@ textarea.form-control {
 .badge.badge-dark {
   color: #fff;
   background-color: #333333;
+}
+.prompt-box-queue {
+  position: fixed;
+  z-index: 100;
+}
+.prompt-box-queue.top-right {
+  top: 20px;
+  right: 20px;
+  left: initial;
+  bottom: initial;
+}
+.prompt-box-queue.bottom-right {
+  top: 0;
+  right: 20px;
+  left: initial;
+  bottom: 20px;
+}
+.prompt-box-queue.top-center,
+.prompt-box-queue.bottom-center {
+  left: 50%;
+  bottom: initial;
+  margin-left: -200px;
+  width: 400px;
+}
+.prompt-box-queue.top-center .prompt-box,
+.prompt-box-queue.bottom-center .prompt-box {
+  max-width: initial;
+  width: 100%;
+}
+.prompt-box-queue.top-center {
+  top: 20px;
+  bottom: initial;
+}
+.prompt-box-queue.bottom-center {
+  top: initial;
+  bottom: 20px;
+}
+.prompt-box-queue .prompt-box {
+  position: relative;
+  min-width: 240px;
+  max-width: 350px;
+  min-height: 50px;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  background-color: #fff;
+  border: 1px solid #cacaca;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+.prompt-box-queue .prompt-box .prompt-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin-top: -13px;
+  width: 26px;
+  height: 26px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 26px;
+  background-color: #aaa;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.prompt-box-queue .prompt-box .prompt-icon:before {
+  content: 'i';
+}
+.prompt-box-queue .prompt-box h3 {
+  margin: 10px;
+  margin-left: 0;
+  font-size: 16px;
+  color: #666;
+}
+.prompt-box-queue .prompt-box p {
+  margin: 10px;
+  margin-left: 0;
+  font-size: 14px;
+  color: #333;
+}
+.prompt-box-queue .prompt-box.prompt-info {
+  background-color: #38bdfd;
+  border-color: #06acfc;
+}
+.prompt-box-queue .prompt-box.prompt-info h3,
+.prompt-box-queue .prompt-box.prompt-info p {
+  color: #fff;
+}
+.prompt-box-queue .prompt-box.prompt-info .prompt-icon {
+  color: #38bdfd;
+  background-color: #fff;
+}
+.prompt-box-queue .prompt-box.prompt-error {
+  background-color: #ff4747;
+  border-color: #ff1e1e;
+}
+.prompt-box-queue .prompt-box.prompt-error h3,
+.prompt-box-queue .prompt-box.prompt-error p {
+  color: #fff;
+}
+.prompt-box-queue .prompt-box.prompt-error .prompt-icon {
+  color: #ff4747;
+  background-color: #fff;
+}
+.prompt-box-queue .prompt-box.prompt-error .prompt-icon:before {
+  content: '×';
+}
+.prompt-box-queue .prompt-box.prompt-success {
+  background-color: #91ca38;
+  border-color: #80b430;
+}
+.prompt-box-queue .prompt-box.prompt-success h3,
+.prompt-box-queue .prompt-box.prompt-success p {
+  color: #fff;
+}
+.prompt-box-queue .prompt-box.prompt-success .prompt-icon {
+  color: #91ca38;
+  background-color: #fff;
+}
+.prompt-box-queue .prompt-box.prompt-success .prompt-icon:before {
+  content: '√';
 }

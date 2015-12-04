@@ -1,0 +1,120 @@
+.prompt-box-queue{
+  @gap: 20px;
+  @icon-size: 26px;
+  @icon-gap: 50px;
+  @center-width: 400px;
+  position: fixed;
+  z-index: 100;
+  &.top-right{
+    top: @gap;
+    right: @gap;
+    left: initial;
+    bottom: initial;
+  }
+  &.bottom-right{
+    top: 0;
+    right: @gap;
+    left: initial;
+    bottom: @gap;
+  }
+  &.top-center, &.bottom-center{
+    left: 50%;
+    bottom: initial;
+    margin-left: -@center-width/2;
+    width: @center-width;
+    .prompt-box{
+      max-width: initial;
+      width: 100%;
+    }
+  }
+  &.top-center{
+    top: @gap;
+    bottom: initial;
+  }
+  &.bottom-center{
+    top: initial;
+    bottom: @gap;
+  }
+  .prompt-box{
+    position: relative;
+    min-width: 240px;
+    max-width: 350px;
+    min-height: 50px;
+    margin-bottom: 10px;
+    padding-left: @icon-gap;
+    background-color: #fff;
+    border: 1px solid #cacaca;
+    .box-shadow(0 1px 10px rgba(0,0,0,.15));
+    .prompt-icon{
+      position: absolute;
+      top: 50%;
+      left: (@icon-gap - @icon-size)/2;
+      margin-top: -@icon-size / 2;
+      width: @icon-size;
+      height: @icon-size;
+      font-family: Georgia;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      line-height: @icon-size;
+      background-color: #aaa;
+      .border-radius(50%);
+      &:before{
+        content: 'i';
+      }
+    }
+    h3{
+      margin: 10px;
+      margin-left: 0;
+      font-size: 16px;
+      color: #666;
+    }
+    p{
+      margin: 10px;
+      margin-left: 0;
+      font-size: 14px;
+      color: #333;
+    }
+    &.prompt-info{
+      background-color: @c-calm;
+      border-color: darken(@c-calm, 10%);
+      h3, p{
+        color: #fff;
+      }
+      .prompt-icon{
+        color: @c-calm;
+        background-color: #fff;
+      }
+    }
+    &.prompt-error{
+      background-color: @c-danger;
+      border-color: darken(@c-danger, 8%);
+      h3, p{
+        color: #fff;
+      }
+      .prompt-icon{
+        color: @c-danger;
+        background-color: #fff;
+        &:before{
+          content: '×';
+        }
+      }
+    }
+    &.prompt-success{
+      background-color: @c-growth;
+      border-color: darken(@c-growth, 6%);
+      h3, p{
+        color: #fff;
+      }
+      .prompt-icon{
+        color: @c-growth;
+        background-color: #fff;
+        &:before{
+          content: '√';
+        }
+      }
+    }
+  }
+}
