@@ -698,17 +698,31 @@
     </div>
     <button class="button button-calm" onclick="document.getElementById('demo-prompt-queue').style.display = 'block'">点击显示消息提示框</button>
     <pre class="component-code">
-&lt;p&gt;
-  &lt;span class="badge badge-danger"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-warning"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-calm"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-cute"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-growth"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-dark"&gt;2&lt;/span&gt;
-&lt;/p&gt;
-&lt;button class="button button-danger"&gt;新消息&lt;span class="badge"&gt;99&lt;/span&gt;&lt;/button&gt;
+&lt;div class="prompt-box-queue top-center" id="demo-prompt-queue" style="display: none;"&gt;
+  &lt;div class="prompt-box"&gt;
+    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+    &lt;h3&gt;系统提示&lt;/h3&gt;
+    &lt;p&gt;这是提示内容&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="prompt-box prompt-info"&gt;
+    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+    &lt;h3&gt;系统提示&lt;/h3&gt;
+    &lt;p&gt;有一个提示框出现了&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="prompt-box prompt-error"&gt;
+    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+    &lt;h3&gt;系统提示&lt;/h3&gt;
+    &lt;p&gt;操作错误了&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="prompt-box prompt-success"&gt;
+    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+    &lt;h3&gt;系统提示&lt;/h3&gt;
+    &lt;p&gt;操作成功了&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </pre>
   </div>
+  <!-- Todo1: 对话框组件 -->
   <!-- Todo2: 模态层组件 -->
 </body>
 </html>
