@@ -1231,6 +1231,13 @@ textarea.form-control {
 .label.label-dark {
   background-color: #333333;
 }
+a.label {
+  text-decoration: none;
+}
+a.label:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
 .badge {
   width: 20px;
   height: 20px;
