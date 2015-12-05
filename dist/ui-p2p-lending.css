@@ -1017,6 +1017,7 @@ textarea.form-control {
 }
 .table th.sorter {
   position: relative;
+  padding-right: 20px;
   cursor: pointer;
 }
 .table th.sorter:hover {
@@ -1028,7 +1029,7 @@ textarea.form-control {
   content: '';
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 5px;
   border: 6px solid transparent;
 }
 .table th.sorter:before {
