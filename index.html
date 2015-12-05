@@ -722,7 +722,38 @@
 &lt;/div&gt;
     </pre>
   </div>
-  <!-- Todo1: 对话框组件 -->
-  <!-- Todo2: 模态层组件 -->
+  <div class="component-wrapper">
+    <h2 class="component-title">对话框组件</h2>
+    <p class="component-desc">如果需要模态背景，则给<code>dialog-container</code>加上<code>has-backdrop</code>的 className。</p>
+    <p class="component-desc">
+      <span class="text-danger">
+        注意：暂无 JavaScript 代码，对话框的显示与隐藏需要额外编写 JavaScript 代码。
+      </span>
+    </p>
+    <div class="dialog-container has-backdrop" id="demo-dialog">
+      <div class="dialog-box">
+        <h3>确认框</h3>
+        <p>您确定要继续吗？</p>
+        <div class="dialog-box-buttons">
+          <button class="button">取消</button>
+          <button class="button button-growth">确定</button>
+        </div>
+      </div>
+    </div>
+    <button class="button button-growth" onclick="document.getElementById('demo-dialog').className += ' active'">点击显示对话框</button>
+    <pre class="component-code">
+&lt;div class="dialog-container has-backdrop" id="demo-dialog"&gt;
+  &lt;div class="dialog-box"&gt;
+    &lt;h3&gt;确认框&lt;/h3&gt;
+    &lt;p&gt;您确定要继续吗？&lt;/p&gt;
+    &lt;div class="dialog-box-buttons"&gt;
+      &lt;button class="button"&gt;取消&lt;/button&gt;
+      &lt;button class="button button-growth"&gt;确定&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+  </div>
+  <!-- Todo1: 模态层组件 -->
 </body>
 </html>
