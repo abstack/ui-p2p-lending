@@ -426,6 +426,7 @@ th {
 /*圆角*/
 /*透明度*/
 /*过渡*/
+/*变换*/
 /*盒子阴影*/
 .clearfix:after,
 .clearfix:before {
@@ -1359,12 +1360,37 @@ textarea.form-control {
 }
 .prompt-box-queue .prompt-box.prompt-danger .prompt-icon,
 .prompt-box-queue .prompt-box.prompt-error .prompt-icon {
-  color: #ff4747;
   background-color: #fff;
 }
 .prompt-box-queue .prompt-box.prompt-danger .prompt-icon:before,
+.prompt-box-queue .prompt-box.prompt-error .prompt-icon:before,
+.prompt-box-queue .prompt-box.prompt-danger .prompt-icon:after,
+.prompt-box-queue .prompt-box.prompt-error .prompt-icon:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -1.5px;
+  margin-left: -28%;
+  width: 56%;
+  height: 3px;
+  background-color: #ff4747;
+}
+.prompt-box-queue .prompt-box.prompt-danger .prompt-icon:before,
 .prompt-box-queue .prompt-box.prompt-error .prompt-icon:before {
-  content: '×';
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.prompt-box-queue .prompt-box.prompt-danger .prompt-icon:after,
+.prompt-box-queue .prompt-box.prompt-error .prompt-icon:after {
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .prompt-box-queue .prompt-box.prompt-success {
   background-color: #91ca38;
@@ -1378,6 +1404,30 @@ textarea.form-control {
   color: #91ca38;
   background-color: #fff;
 }
+.prompt-box-queue .prompt-box.prompt-success .prompt-icon:before,
+.prompt-box-queue .prompt-box.prompt-success .prompt-icon:after {
+  content: '';
+  top: 52%;
+  height: 3px;
+  position: absolute;
+  background-color: #91ca38;
+}
 .prompt-box-queue .prompt-box.prompt-success .prompt-icon:before {
-  content: '√';
+  right: 51%;
+  width: 8px;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.prompt-box-queue .prompt-box.prompt-success .prompt-icon:after {
+  left: 30%;
+  margin-top: -2px;
+  width: 14px;
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

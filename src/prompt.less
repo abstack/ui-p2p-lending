@@ -95,10 +95,26 @@
         color: #fff;
       }
       .prompt-icon{
-        color: @c-danger;
         background-color: #fff;
+        &:before,
+        &:after{
+          @width: 56%;
+          @height: 3px;
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -@height/2;
+          margin-left: -@width/2;
+          width: @width;
+          height: @height;
+          background-color: @c-danger;
+        }
         &:before{
-          content: '×';
+          .transform(rotate(45deg));
+        }
+        &:after{
+          .transform(rotate(-45deg));
         }
       }
     }
@@ -111,8 +127,24 @@
       .prompt-icon{
         color: @c-growth;
         background-color: #fff;
+        &:before,
+        &:after{
+          content: '';
+          top: 52%;
+          height: 3px;
+          position: absolute;
+          background-color: @c-growth;
+        }
         &:before{
-          content: '√';
+          right: 51%;
+          width: 8px;
+          .transform(rotate(45deg));
+        }
+        &:after{
+          left: 30%;
+          margin-top: -2px;
+          width: 14px;
+          .transform(rotate(-45deg));
         }
       }
     }
