@@ -1471,6 +1471,7 @@ textarea.form-control {
   margin-left: -200px;
   width: 400px;
   background-color: #fff;
+  border: 1px solid #808080;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
