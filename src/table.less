@@ -10,6 +10,36 @@
   th{
     text-align: left;
     border-bottom: 1px solid #ccc;
+    &.sorter{
+      @size: 6px;
+      @gap: 4px;
+      position: relative;
+      cursor: pointer;
+      &:hover{
+        .opacity(70);
+      }
+      &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        border: @size solid transparent;
+      }
+      &:before{
+        margin-top: -@size*2 - @gap/2;
+        border-bottom-color: #ddd;
+      }
+      &:after{
+        margin-top: @gap/2;
+        border-top-color: #ddd;
+      }
+      &.desc:after{
+        border-top-color: #999;
+      }
+      &.asc:before{
+        border-bottom-color: #999;
+      }
+    }
   }
   &.table-bordered{
     border: 1px solid #ccc;
