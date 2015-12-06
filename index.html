@@ -754,6 +754,58 @@
 &lt;/div&gt;
     </pre>
   </div>
-  <!-- Todo1: 模态层组件 -->
+  <div class="component-wrapper">
+    <h2 class="component-title">模态框组件</h2>
+    <p class="component-desc">
+      <span class="text-danger">
+        注意：暂无 JavaScript 代码，对话框的显示与隐藏需要额外编写 JavaScript 代码。
+      </span>
+    </p>
+    <div class="modal-container" id="demo-modal">
+      <div class="modal-box">
+        <h3>请确认您的机票预定信息</h3>
+        <div class="modal-content">
+          <table class="table table-bordered table-hover table-striped light-bg">
+            <thead>
+              <tr>
+                <th>乘机人</th>
+                <th>身份证号码</th>
+                <th>时间</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>张三</td>
+                <td>330284759238420192</td>
+                <td>2015-12-06</td>
+              </tr>
+              <tr>
+                <td>李四</td>
+                <td>330284759238420192</td>
+                <td>2015-12-06</td>
+              </tr>
+              <tr>
+                <td>王麻子</td>
+                <td>330284759238420192</td>
+                <td>2015-12-06</td>
+              </tr>
+              <tr>
+                <td>二子</td>
+                <td>330284759238420192</td>
+                <td>2015-12-06</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-box-buttons">
+          <button class="button">返回修改</button>
+          <button class="button button-danger">确认无误</button>
+        </div>
+      </div>
+    </div>
+    <button class="button button-dream" onclick="document.getElementById('demo-modal').className += ' active'">点击显示模态框</button>
+    <pre class="component-code">
+    </pre>
+  </div>
 </body>
 </html>
