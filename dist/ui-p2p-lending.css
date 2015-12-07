@@ -1021,6 +1021,30 @@ textarea.form-control {
   margin: 0;
   border-left: 0;
 }
+.input-group .input-group-addon.input-group-addon-select {
+  position: relative;
+}
+.input-group .input-group-addon.input-group-addon-select:after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: 6px;
+  margin-top: -3px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-color: #666;
+}
+.input-group .input-group-addon.input-group-addon-select select {
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+  min-width: 60px;
+  min-height: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 .caution-box {
   margin: 15px 0;
   padding: 10px 15px;
