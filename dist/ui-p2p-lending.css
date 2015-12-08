@@ -744,9 +744,36 @@ a.button {
 .button:active {
   background-color: #d4d4d4;
 }
-.button[disabled] {
-  background-color: #c5c5c5!important;
-  border-color: #aaa!important;
+.button.button-danger[disabled],
+.button.button-warning[disabled],
+.button.button-calm[disabled],
+.button.button-dream[disabled],
+.button.button-cute[disabled],
+.button.button-growth[disabled],
+.button.button-dark[disabled],
+.button.button-danger[disabled]:hover,
+.button.button-warning[disabled]:hover,
+.button.button-calm[disabled]:hover,
+.button.button-dream[disabled]:hover,
+.button.button-cute[disabled]:hover,
+.button.button-growth[disabled]:hover,
+.button.button-dark[disabled]:hover,
+.button.button-danger[disabled]:focus,
+.button.button-warning[disabled]:focus,
+.button.button-calm[disabled]:focus,
+.button.button-dream[disabled]:focus,
+.button.button-cute[disabled]:focus,
+.button.button-growth[disabled]:focus,
+.button.button-dark[disabled]:focus,
+.button.button-danger[disabled]:active,
+.button.button-warning[disabled]:active,
+.button.button-calm[disabled]:active,
+.button.button-dream[disabled]:active,
+.button.button-cute[disabled]:active,
+.button.button-growth[disabled]:active,
+.button.button-dark[disabled]:active {
+  background-color: #c5c5c5;
+  border-color: #aaa;
   cursor: not-allowed;
 }
 .button.button-danger {

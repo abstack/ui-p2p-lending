@@ -24,10 +24,21 @@ a.button{
   outline: none;
   .transition(~'background-color .2s, border .2s');
   .button-handle-produce(#fff);
-  &[disabled]{
-    background-color: #c5c5c5!important;
-    border-color: #aaa!important;
-    cursor: not-allowed;
+  &.button-danger,
+  &.button-warning,
+  &.button-calm,
+  &.button-dream,
+  &.button-cute,
+  &.button-growth,
+  &.button-dark{
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:focus,
+    &[disabled]:active{
+      background-color: #c5c5c5;
+      border-color: #aaa;
+      cursor: not-allowed;
+    }
   }
   &.button-danger{
     color: #fff;
