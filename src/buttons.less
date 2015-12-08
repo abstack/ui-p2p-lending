@@ -24,17 +24,18 @@ a.button{
   outline: none;
   .transition(~'background-color .2s, border .2s');
   .button-handle-produce(#fff);
-  &.button-danger,
-  &.button-warning,
-  &.button-calm,
-  &.button-dream,
-  &.button-cute,
-  &.button-growth,
-  &.button-dark{
-    &[disabled],
-    &[disabled]:hover,
-    &[disabled]:focus,
-    &[disabled]:active{
+  &[disabled],
+  &.button-danger[disabled],
+  &.button-warning[disabled],
+  &.button-calm[disabled],
+  &.button-dream[disabled],
+  &.button-cute[disabled],
+  &.button-growth[disabled],
+  &.button-dark[disabled]{
+    &,
+    &:hover,
+    &:focus,
+    &:active{
       background-color: #c5c5c5;
       border-color: #aaa;
       cursor: not-allowed;

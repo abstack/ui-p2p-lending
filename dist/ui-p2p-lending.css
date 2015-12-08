@@ -296,15 +296,6 @@ input[type="submit"] {
 }
 
 /**
- * Re-set default cursor for disabled elements.
- */
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
  * Remove inner padding and border in Firefox 4+.
  */
 
@@ -744,6 +735,7 @@ a.button {
 .button:active {
   background-color: #d4d4d4;
 }
+.button[disabled],
 .button.button-danger[disabled],
 .button.button-warning[disabled],
 .button.button-calm[disabled],
@@ -751,6 +743,7 @@ a.button {
 .button.button-cute[disabled],
 .button.button-growth[disabled],
 .button.button-dark[disabled],
+.button[disabled]:hover,
 .button.button-danger[disabled]:hover,
 .button.button-warning[disabled]:hover,
 .button.button-calm[disabled]:hover,
@@ -758,6 +751,7 @@ a.button {
 .button.button-cute[disabled]:hover,
 .button.button-growth[disabled]:hover,
 .button.button-dark[disabled]:hover,
+.button[disabled]:focus,
 .button.button-danger[disabled]:focus,
 .button.button-warning[disabled]:focus,
 .button.button-calm[disabled]:focus,
@@ -765,6 +759,7 @@ a.button {
 .button.button-cute[disabled]:focus,
 .button.button-growth[disabled]:focus,
 .button.button-dark[disabled]:focus,
+.button[disabled]:active,
 .button.button-danger[disabled]:active,
 .button.button-warning[disabled]:active,
 .button.button-calm[disabled]:active,
