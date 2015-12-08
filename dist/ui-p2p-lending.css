@@ -1443,6 +1443,7 @@ a.label:hover {
   margin: 10px;
   margin-left: 0;
   font-size: 16px;
+  line-height: 16px;
   color: #666;
 }
 .prompt-box-queue .prompt-box p {
@@ -1450,6 +1451,7 @@ a.label:hover {
   margin-left: 0;
   word-break: break-word;
   font-size: 14px;
+  line-height: 16px;
   color: #333;
 }
 .prompt-box-queue .prompt-box.prompt-info {
