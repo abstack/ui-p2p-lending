@@ -24,6 +24,11 @@ a.button{
   outline: none;
   .transition(~'background-color .2s, border .2s');
   .button-handle-produce(#fff);
+  &[disabled]{
+    background-color: #c5c5c5!important;
+    border-color: #aaa!important;
+    cursor: not-allowed;
+  }
   &.button-danger{
     color: #fff;
     background-color: @c-danger;

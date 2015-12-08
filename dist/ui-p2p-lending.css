@@ -744,6 +744,11 @@ a.button {
 .button:active {
   background-color: #d4d4d4;
 }
+.button[disabled] {
+  background-color: #c5c5c5!important;
+  border-color: #aaa!important;
+  cursor: not-allowed;
+}
 .button.button-danger {
   color: #fff;
   background-color: #ff4747;
