@@ -721,6 +721,8 @@ a.button {
 .button {
   padding: 10px 20px;
   color: #666;
+  font-size: 16px;
+  line-height: 16px;
   border: 1px solid;
   background-color: #fff;
   outline: none;
@@ -863,7 +865,7 @@ a.button {
   color: #333;
 }
 .form-group label[class^=col-] {
-  padding-top: 11px;
+  padding-top: 10px;
 }
 .form-group .form-control {
   margin-left: 10px;
@@ -918,6 +920,8 @@ a.button {
   width: 200px;
   padding: 10px 5px;
   color: #333;
+  font-size: 14px;
+  line-height: 16px;
   border: 1px solid #ccc;
   outline: none;
   -webkit-transition: background-color .3s, border .3s;
