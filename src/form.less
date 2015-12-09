@@ -167,10 +167,13 @@ textarea.form-control{
     }
     &.input-group-addon-select{
       position: relative;
+      // 自定义下拉菜单的小三角
       &:after{
         @size: 6px;
         content: '';
         position: absolute;
+        // 由于 IE9 不支持 appearance 和 ::expand 所以不显示自定义的三角而采用系统的三角
+        display: none\9\0;
         z-index: 0;
         top: 50%;
         right: 6px;
@@ -187,6 +190,11 @@ textarea.form-control{
         min-height: 30px;
         -webkit-appearance: none;
         -moz-appearance: none;
+        appearance: none;
+        // 隐藏 IE10 及以上的小三角
+        &::-ms-expand{
+          display: none;
+        }
       }
     }
   }

@@ -1200,6 +1200,7 @@ textarea.form-control {
 .input-group .input-group-addon.input-group-addon-select:after {
   content: '';
   position: absolute;
+  display: none\9\0;
   z-index: 0;
   top: 50%;
   right: 6px;
@@ -1216,6 +1217,10 @@ textarea.form-control {
   min-height: 30px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
+}
+.input-group .input-group-addon.input-group-addon-select select::-ms-expand {
+  display: none;
 }
 .caution-box {
   margin: 15px 0;
