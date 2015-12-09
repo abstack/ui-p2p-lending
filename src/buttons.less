@@ -22,7 +22,7 @@ a.button{
   border: 1px solid;
   background-color: #fff;
   outline: none;
-  .transition(~'background-color .2s, border .2s');
+  .transition(~'background-color .2s, border .2s, color .2s');
   .button-handle-produce(#fff);
   // 禁用样式
   &[disabled],
@@ -57,7 +57,7 @@ a.button{
         background-color: transparent;
       }
       &:focus{
-        outline: 1px dashed #9FBEDB;
+        border: 1px dashed #9FBEDB;
       }
     }
   }
