@@ -771,6 +771,63 @@ a.button {
   border-color: #aaa;
   cursor: not-allowed;
 }
+.button.button-clear,
+.button.button-clear.button-danger,
+.button.button-clear.button-warning,
+.button.button-clear.button-calm,
+.button.button-clear.button-dream,
+.button.button-clear.button-cute,
+.button.button-clear.button-growth,
+.button.button-clear.button-dark,
+.button.button-clear:hover,
+.button.button-clear.button-danger:hover,
+.button.button-clear.button-warning:hover,
+.button.button-clear.button-calm:hover,
+.button.button-clear.button-dream:hover,
+.button.button-clear.button-cute:hover,
+.button.button-clear.button-growth:hover,
+.button.button-clear.button-dark:hover,
+.button.button-clear:focus,
+.button.button-clear.button-danger:focus,
+.button.button-clear.button-warning:focus,
+.button.button-clear.button-calm:focus,
+.button.button-clear.button-dream:focus,
+.button.button-clear.button-cute:focus,
+.button.button-clear.button-growth:focus,
+.button.button-clear.button-dark:focus,
+.button.button-clear:active,
+.button.button-clear.button-danger:active,
+.button.button-clear.button-warning:active,
+.button.button-clear.button-calm:active,
+.button.button-clear.button-dream:active,
+.button.button-clear.button-cute:active,
+.button.button-clear.button-growth:active,
+.button.button-clear.button-dark:active {
+  border-color: transparent;
+  background-color: transparent;
+}
+.button.button-clear:focus,
+.button.button-clear.button-danger:focus,
+.button.button-clear.button-warning:focus,
+.button.button-clear.button-calm:focus,
+.button.button-clear.button-dream:focus,
+.button.button-clear.button-cute:focus,
+.button.button-clear.button-growth:focus,
+.button.button-clear.button-dark:focus {
+  outline: 1px dashed #9FBEDB;
+}
+.button.button-clear {
+  color: #666;
+}
+.button.button-clear:hover {
+  color: #595959;
+}
+.button.button-clear:focus {
+  color: #4d4d4d;
+}
+.button.button-clear:active {
+  color: #404040;
+}
 .button.button-danger {
   color: #fff;
   background-color: #ff4747;
@@ -785,6 +842,18 @@ a.button {
 }
 .button.button-danger:active {
   background-color: #ef0000;
+}
+.button.button-danger.button-clear {
+  color: #ff4747;
+}
+.button.button-danger.button-clear:hover {
+  color: #ff2d2d;
+}
+.button.button-danger.button-clear:focus {
+  color: #ff1414;
+}
+.button.button-danger.button-clear:active {
+  color: #f90000;
 }
 .button.button-warning {
   color: #fff;
@@ -801,6 +870,18 @@ a.button {
 .button.button-warning:active {
   background-color: #ed8300;
 }
+.button.button-warning.button-clear {
+  color: #ffac45;
+}
+.button.button-warning.button-clear:hover {
+  color: #ffa12b;
+}
+.button.button-warning.button-clear:focus {
+  color: #ff9512;
+}
+.button.button-warning.button-clear:active {
+  color: #f78900;
+}
 .button.button-calm {
   color: #fff;
   background-color: #38bdfd;
@@ -815,6 +896,18 @@ a.button {
 }
 .button.button-calm:active {
   background-color: #0295dc;
+}
+.button.button-calm.button-clear {
+  color: #38bdfd;
+}
+.button.button-calm.button-clear:hover {
+  color: #1fb5fd;
+}
+.button.button-calm.button-clear:focus {
+  color: #06acfc;
+}
+.button.button-calm.button-clear:active {
+  color: #029ce6;
 }
 .button.button-dream {
   color: #fff;
@@ -831,6 +924,18 @@ a.button {
 .button.button-dream:active {
   background-color: #612de6;
 }
+.button.button-dream.button-clear {
+  color: #9b7aef;
+}
+.button.button-dream.button-clear:hover {
+  color: #8a63ec;
+}
+.button.button-dream.button-clear:focus {
+  color: #794cea;
+}
+.button.button-dream.button-clear:active {
+  color: #6836e7;
+}
 .button.button-cute {
   color: #fff;
   background-color: #ff82b0;
@@ -845,6 +950,18 @@ a.button {
 }
 .button.button-cute:active {
   background-color: #ff2b79;
+}
+.button.button-cute.button-clear {
+  color: #ff82b0;
+}
+.button.button-cute.button-clear:hover {
+  color: #ff68a0;
+}
+.button.button-cute.button-clear:focus {
+  color: #ff4f90;
+}
+.button.button-cute.button-clear:active {
+  color: #ff3580;
 }
 .button.button-growth {
   color: #fff;
@@ -861,6 +978,18 @@ a.button {
 .button.button-growth:active {
   background-color: #618724;
 }
+.button.button-growth.button-clear {
+  color: #91ca38;
+}
+.button.button-growth.button-clear:hover {
+  color: #83b831;
+}
+.button.button-growth.button-clear:focus {
+  color: #75a32c;
+}
+.button.button-growth.button-clear:active {
+  color: #668f26;
+}
 .button.button-dark {
   color: #fff;
   background-color: #333333;
@@ -875,6 +1004,18 @@ a.button {
 }
 .button.button-dark:active {
   background-color: #080808;
+}
+.button.button-dark.button-clear {
+  color: #333333;
+}
+.button.button-dark.button-clear:hover {
+  color: #262626;
+}
+.button.button-dark.button-clear:focus {
+  color: #1a1a1a;
+}
+.button.button-dark.button-clear:active {
+  color: #0d0d0d;
 }
 .button.button-block {
   display: block;

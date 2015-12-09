@@ -24,6 +24,7 @@ a.button{
   outline: none;
   .transition(~'background-color .2s, border .2s');
   .button-handle-produce(#fff);
+  // 禁用样式
   &[disabled],
   &.button-danger[disabled],
   &.button-warning[disabled],
@@ -41,41 +42,158 @@ a.button{
       cursor: not-allowed;
     }
   }
+  // 无边框及背景样式
+  &.button-clear{
+    &,
+    &.button-danger,
+    &.button-warning,
+    &.button-calm,
+    &.button-dream,
+    &.button-cute,
+    &.button-growth,
+    &.button-dark{
+      &, &:hover, &:focus, &:active{
+        border-color: transparent;
+        background-color: transparent;
+      }
+      &:focus{
+        outline: 1px dashed #9FBEDB;
+      }
+    }
+  }
+  &.button-clear{
+    color: #666;
+    &:hover{
+      color: darken(#666, 5%);
+    }
+    &:focus{
+      color: darken(#666, 10%);
+    }
+    &:active{
+      color: darken(#666, 15%);
+    }
+  }
+  // 按钮风格
   &.button-danger{
     color: #fff;
     background-color: @c-danger;
     .button-handle-produce(@c-danger);
+    &.button-clear{
+      color: @c-danger;
+      &:hover{
+        color: darken(@c-danger, 5%);
+      }
+      &:focus{
+        color: darken(@c-danger, 10%);
+      }
+      &:active{
+        color: darken(@c-danger, 15%);
+      }
+    }
   }
   &.button-warning{
     color: #fff;
     background-color: @c-warning;
     .button-handle-produce(@c-warning);
+    &.button-clear{
+      color: @c-warning;
+      &:hover{
+        color: darken(@c-warning, 5%);
+      }
+      &:focus{
+        color: darken(@c-warning, 10%);
+      }
+      &:active{
+        color: darken(@c-warning, 15%);
+      }
+    }
   }
   &.button-calm{
     color: #fff;
     background-color: @c-calm;
     .button-handle-produce(@c-calm);
+    &.button-clear{
+      color: @c-calm;
+      &:hover{
+        color: darken(@c-calm, 5%);
+      }
+      &:focus{
+        color: darken(@c-calm, 10%);
+      }
+      &:active{
+        color: darken(@c-calm, 15%);
+      }
+    }
   }
   &.button-dream{
     color: #fff;
     background-color: @c-dream;
     .button-handle-produce(@c-dream);
+    &.button-clear{
+      color: @c-dream;
+      &:hover{
+        color: darken(@c-dream, 5%);
+      }
+      &:focus{
+        color: darken(@c-dream, 10%);
+      }
+      &:active{
+        color: darken(@c-dream, 15%);
+      }
+    }
   }
   &.button-cute{
     color: #fff;
     background-color: @c-cute;
     .button-handle-produce(@c-cute);
+    &.button-clear{
+      color: @c-cute;
+      &:hover{
+        color: darken(@c-cute, 5%);
+      }
+      &:focus{
+        color: darken(@c-cute, 10%);
+      }
+      &:active{
+        color: darken(@c-cute, 15%);
+      }
+    }
   }
   &.button-growth{
     color: #fff;
     background-color: @c-growth;
     .button-handle-produce(@c-growth);
+    &.button-clear{
+      color: @c-growth;
+      &:hover{
+        color: darken(@c-growth, 5%);
+      }
+      &:focus{
+        color: darken(@c-growth, 10%);
+      }
+      &:active{
+        color: darken(@c-growth, 15%);
+      }
+    }
   }
   &.button-dark{
     color: #fff;
     background-color: @c-dark;
     .button-handle-produce(@c-dark);
+    &.button-clear{
+      color: @c-dark;
+      &:hover{
+        color: darken(@c-dark, 5%);
+      }
+      &:focus{
+        color: darken(@c-dark, 10%);
+      }
+      &:active{
+        color: darken(@c-dark, 15%);
+      }
+    }
   }
+  // 块级按钮
   &.button-block{
     display: block;
     width: 100%;
