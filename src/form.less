@@ -125,13 +125,13 @@ textarea.form-control{
   display: table;
   width: 200px;
   border-collapse: separate;
-  border-spacing: 0;
   > .form-control, .input-group-addon{
     display: table-cell;
     margin: 0;
     vertical-align: middle;
   }
   > .form-control{
+    float: left;
     width: 100%;
   }
   .input-group-addon{
@@ -173,7 +173,7 @@ textarea.form-control{
         content: '';
         position: absolute;
         // 由于 IE9 不支持 appearance 和 ::expand 所以不显示自定义的三角而采用系统的三角
-        display: none\9\0;
+        display: none\0;
         z-index: 0;
         top: 50%;
         right: 6px;
