@@ -151,5 +151,20 @@
         }
       }
     }
+    &.prompt-warning{
+      background-color: @c-warning;
+      border-color: darken(@c-warning, 10%);
+      h3, p{
+        color: #fff;
+      }
+      .prompt-icon{
+        color: @c-warning;
+        background-color: #fff;
+        &:before{
+          content: '!';
+          font-size: 20px;
+        }
+      }
+    }
   }
 }

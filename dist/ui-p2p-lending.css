@@ -1724,6 +1724,22 @@ a.label:hover {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+.prompt-box-queue .prompt-box.prompt-warning {
+  background-color: #ffac45;
+  border-color: #ff9512;
+}
+.prompt-box-queue .prompt-box.prompt-warning h3,
+.prompt-box-queue .prompt-box.prompt-warning p {
+  color: #fff;
+}
+.prompt-box-queue .prompt-box.prompt-warning .prompt-icon {
+  color: #ffac45;
+  background-color: #fff;
+}
+.prompt-box-queue .prompt-box.prompt-warning .prompt-icon:before {
+  content: '!';
+  font-size: 20px;
+}
 .dialog-container {
   position: fixed;
   z-index: 101;
