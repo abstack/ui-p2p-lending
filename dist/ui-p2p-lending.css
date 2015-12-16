@@ -1118,6 +1118,8 @@ a.button {
   width: 300px;
 }
 select.form-control {
+  padding-top: 0;
+  padding-bottom: 0;
   height: 38px;
   background-color: #fff;
   -webkit-border-radius: 0;
@@ -1715,7 +1717,7 @@ a.label:hover {
   transform: rotate(45deg);
 }
 .prompt-box-queue .prompt-box.prompt-success .prompt-icon:after {
-  left: 30%;
+  left: 31%;
   margin-top: -2px;
   width: 14px;
   -webkit-transform: rotate(-45deg);
