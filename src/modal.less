@@ -16,6 +16,25 @@
       .transform(scale(1));
     }
   }
+  .stop{
+        ackground-color: #fff;
+        &:before,
+        &:after{
+           content: '';
+          width: 2px;
+          height: 20px;
+          position: absolute;
+          right:20px;
+          top: 10px;
+          background-color: red;
+        }
+        &:before{
+          .transform(rotate(45deg));
+        }
+        &:after{
+          .transform(rotate(-45deg));
+        }
+    }
   .modal-box{
     @hgap: 20px;
     position: absolute;
