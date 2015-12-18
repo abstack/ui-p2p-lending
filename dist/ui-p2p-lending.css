@@ -1854,6 +1854,36 @@ a.label:hover {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+.modal-container .modal-close-button {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 10px;
+}
+.modal-container .modal-close-button:before,
+.modal-container .modal-close-button:after {
+  content: '';
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  right: 44%;
+  top: 0;
+  background-color: #999;
+}
+.modal-container .modal-close-button:before {
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.modal-container .modal-close-button:after {
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 .modal-container .modal-box {
   position: absolute;
   top: 15%;
