@@ -8,6 +8,29 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="http://rawgit.com/PeachScript/ui-p2p-lending/master/dist/ui-p2p-lending.css">
+    <style>
+      .presentation-grids *[class^=col]{
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+      }
+      .container{
+        width: 100%;
+      }
+      .main-content pre{
+        margin-top: 20px;
+      }
+      table.table{
+        display: table;
+      }
+      .main-content dl.filter dt{
+        margin-top: 0;
+      }
+      .main-content dl.filter dd{
+        margin-bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <section class="page-header">
@@ -20,487 +43,877 @@
 
     <section class="main-content">
       <h2>
-<a id="栅格系统" class="anchor" href="#%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a>栅格系统</h2>
+      <a id="栅格系统" class="anchor" href="#%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a>栅格系统</h2>
 
-<p>可实现页面基本的排版布局，共分十二栏，总宽度默认为 1000 px，可在 <code>settings.less</code> 中进行配置。</p>
+      <p>可实现页面基本的排版布局，共分十二栏，总宽度默认为 1000 px，可在 <code>settings.less</code> 中进行配置。</p>
+      
+      <div class="container presentation-grids">
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+      </div>
+      <div class="container presentation-grids">
+        <div class="col-2">col-2</div>
+        <div class="col-10">col-10</div>
+      </div>
 
-<pre><code>&lt;div class="container presentation-grids"&gt;
-  &lt;div class="col-1"&gt;1&lt;/div&gt;
-  &lt;div class="col-1"&gt;2&lt;/div&gt;
-  &lt;div class="col-1"&gt;3&lt;/div&gt;
-  &lt;div class="col-1"&gt;4&lt;/div&gt;
-  &lt;div class="col-1"&gt;5&lt;/div&gt;
-  &lt;div class="col-1"&gt;6&lt;/div&gt;
-  &lt;div class="col-1"&gt;7&lt;/div&gt;
-  &lt;div class="col-1"&gt;8&lt;/div&gt;
-  &lt;div class="col-1"&gt;9&lt;/div&gt;
-  &lt;div class="col-1"&gt;10&lt;/div&gt;
-  &lt;div class="col-1"&gt;11&lt;/div&gt;
-  &lt;div class="col-1"&gt;12&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="container presentation-grids"&gt;
-  &lt;div class="col-2"&gt;3&lt;/div&gt;
-  &lt;div class="col-10"&gt;9&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h2>
-<a id="文字样式" class="anchor" href="#%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>文字样式</h2>
-
-<pre><code>&lt;h3 class="component-desc text-dark"&gt;颜色（可在&lt;code&gt;settings.less&lt;/code&gt;中进行配置）：&lt;/h3&gt;
-&lt;span class="text-danger"&gt;text-danger 危险&lt;/span&gt;
-&lt;span class="text-warning"&gt;text-warning 警告&lt;/span&gt;
-&lt;span class="text-calm"&gt;text-calm 冷静&lt;/span&gt;
-&lt;span class="text-dream"&gt;text-dream 梦幻&lt;/span&gt;
-&lt;span class="text-cute"&gt;text-cute 可爱&lt;/span&gt;
-&lt;span class="text-growth"&gt;text-growth 生长&lt;/span&gt;
-&lt;span class="text-dark"&gt;text-dark 黑暗&lt;/span&gt;
-&lt;h3 class="component-desc text-dark"&gt;超链接：&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href="javascript:;" class="text-danger"&gt;红色链接&lt;/a&gt;
-&lt;/p&gt;
-&lt;h3 class="component-desc text-dark"&gt;对齐方式：&lt;/h3&gt;
-&lt;p class="text-left"&gt;text-left 靠左对齐&lt;/p&gt;
-&lt;p class="text-center"&gt;text-center 居中对齐&lt;/p&gt;
-&lt;p class="text-right"&gt;text-right 靠右对齐&lt;/p&gt;
-&lt;p class="text-indent"&gt;text-indent 首行缩进两个字符&lt;/p&gt;
-&lt;p class="text-ellipsis"&gt;text-ellipsis CSS 3省略号：文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号&lt;/p&gt;
-</code></pre>
-
-<h2>
-<a id="标的组件" class="anchor" href="#%E6%A0%87%E7%9A%84%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>标的组件</h2>
-
-<p>基本的标列表样式及布局，利用栅格系统可以对每个属性的宽度进行修改。</p>
-
-<pre><code>&lt;div class="container"&gt;
-  &lt;div class="col-8"&gt;
-    &lt;div class="project-list"&gt;
-      &lt;div class="project-item"&gt;
-        &lt;h3&gt;
-          &lt;a href="javascript:;"&gt;项目名称&lt;/a&gt;
-        &lt;/h3&gt;
-        &lt;div class="project-attr rate col-3"&gt;
-          &lt;p class="project-attr-desc"&gt;预期年化收益率&lt;/p&gt;
-          &lt;strong class="project-attr-val"&gt;15%&lt;/strong&gt;
-        &lt;/div&gt;
-        &lt;div class="project-attr periods col-2"&gt;
-          &lt;p class="project-attr-desc"&gt;借款期限&lt;/p&gt;
-          &lt;strong class="project-attr-val"&gt;12 &lt;small&gt;天&lt;/small&gt;&lt;/strong&gt;
-        &lt;/div&gt;
-        &lt;div class="project-attr amount col-4"&gt;
-          &lt;p class="project-attr-desc"&gt;项目金额&lt;/p&gt;
-          &lt;strong class="project-attr-val"&gt;100000 &lt;small&gt;元&lt;/small&gt;&lt;/strong&gt;
-        &lt;/div&gt;
-        &lt;div class="project-attr invest col-3"&gt;
-          &lt;a href="javascript:;" class="button button-danger"&gt;立即投标&lt;/a&gt;
-        &lt;/div&gt;
+      <pre><code>&lt;div class="container presentation-grids"&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
+        &lt;div class="col-1"&gt;col-1&lt;/div&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h2>
-<a id="按钮样式" class="anchor" href="#%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>按钮样式</h2>
-
-<pre><code>&lt;button class="button"&gt;默认按钮&lt;/button&gt;
-&lt;button class="button button-danger"&gt;危险按钮&lt;/button&gt;
-&lt;button class="button button-warning"&gt;警告按钮&lt;/button&gt;
-&lt;button class="button button-calm"&gt;蓝色按钮&lt;/button&gt;
-&lt;button class="button button-dream"&gt;紫色按钮&lt;/button&gt;
-&lt;button class="button button-cute"&gt;粉色按钮&lt;/button&gt;
-&lt;button class="button button-growth"&gt;绿色按钮&lt;/button&gt;
-&lt;button class="button button-dark"&gt;黑色按钮&lt;/button&gt;
-&lt;p&gt;
-  &lt;button class="button button-clear"&gt;默认无边框背景按钮&lt;/button&gt;
-  &lt;button class="button button-danger button-clear"&gt;危险无边框背景按钮&lt;/button&gt;
-  &lt;button class="button button-warning button-clear"&gt;警告无边框背景按钮&lt;/button&gt;
-  &lt;button class="button button-calm button-clear"&gt;蓝色无边框背景按钮&lt;/button&gt;
-  &lt;button class="button button-dream button-clear"&gt;紫色无边框背景按钮&lt;/button&gt;
-  &lt;button class="button button-cute button-clear"&gt;粉色无边框背景按钮&lt;/button&gt;
-  &lt;button class="button button-growth button-clear"&gt;绿色无边框背景按钮&lt;/button&gt;
-  &lt;button class="button button-dark button-clear"&gt;黑色无边框背景按钮&lt;/button&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;button class="button button-calm" disabled="disabled"&gt;禁用状态按钮&lt;/button&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;button class="button button-block button-calm"&gt;块级按钮&lt;/button&gt;
-&lt;/p&gt;
-</code></pre>
-
-<h2>
-<a id="表单样式" class="anchor" href="#%E8%A1%A8%E5%8D%95%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>表单样式</h2>
-
-<p>除垂直排列的表单之外，给 <code>form</code> 加上 <code>form-inline</code> 的 className，则会以行内表单样式呈现。</p>
-
-<p>表单可具备三种状态：错误（红色）、警告（橙色）、成功（绿色），给 <code>form-group</code> 分别加上 <code>form-group-error</code>、<code>form-group-warning</code>、<code>form-group-success</code> 即可显示对应状态。</p>
-
-<pre><code>&lt;div class="container"&gt;
-  &lt;div class="col-2"&gt;&lt;/div&gt;
-  &lt;div class="col-8"&gt;
-    &lt;form&gt;
-      &lt;div class="form-group form-group-error"&gt;
-        &lt;label for="username" class="col-3 text-right"&gt;用户名：&lt;/label&gt;
-        &lt;input id="username" type="text" class="form-control"&gt;
-        &lt;span class="form-control-note"&gt;*用户名为必填&lt;/span&gt;
+      &lt;div class="container presentation-grids"&gt;
+        &lt;div class="col-2"&gt;col-2&lt;/div&gt;
+        &lt;div class="col-10"&gt;col-10&lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="lasttime" class="col-3 text-right"&gt;上次登录时间：&lt;/label&gt;
-        &lt;div class="input-group"&gt;
-          &lt;input id="lasttime" type="text" class="form-control" readonly="readonly" value="123"&gt;
-          &lt;span class="input-group-addon"&gt;只读&lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="mobile_vcode" class="col-3 text-right"&gt;手机验证码：&lt;/label&gt;
-        &lt;div class="input-group"&gt;
-          &lt;input id="mobile_vcode" type="text" class="form-control" readonly="readonly" value="123"&gt;
-          &lt;span class="input-group-addon input-group-addon-button"&gt;
-            &lt;button class="button" type="button"&gt;发送验证码&lt;/button&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="status-saved" class="col-3 text-right"&gt;登录状态保存：&lt;/label&gt;
-        &lt;div class="input-group"&gt;
-          &lt;input id="status-saved" type="text" class="form-control" value="1"&gt;
-          &lt;span class="input-group-addon input-group-addon-select"&gt;
-            &lt;select class="form-control"&gt;
-              &lt;option value="1"&gt;天&lt;/option&gt;
-              &lt;option value="2"&gt;个月&lt;/option&gt;
-            &lt;/select&gt;
-          &lt;/span&gt;
+      </code></pre>
+
+      <h2>
+      <a id="文字样式" class="anchor" href="#%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>文字样式</h2>
+
+      <h3 class="component-desc text-dark">颜色（可在<code>settings.less</code>中进行配置）：</h3>
+      <span class="text-danger">text-danger 危险</span>
+      <span class="text-warning">text-warning 警告</span>
+      <span class="text-calm">text-calm 冷静</span>
+      <span class="text-dream">text-dream 梦幻</span>
+      <span class="text-cute">text-cute 可爱</span>
+      <span class="text-growth">text-growth 生长</span>
+      <span class="text-dark">text-dark 黑暗</span>
+      <h3 class="component-desc text-dark">超链接：</h3>
+      <p>
+        <a href="javascript:;" class="text-danger">红色链接</a>
+      </p>
+      <h3 class="component-desc text-dark">对齐方式：</h3>
+      <p class="text-left">text-left 靠左对齐</p>
+      <p class="text-center">text-center 居中对齐</p>
+      <p class="text-right">text-right 靠右对齐</p>
+      <p class="text-indent">text-indent 首行缩进两个字符</p>
+      <p class="text-ellipsis">text-ellipsis CSS 3省略号：文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号</p>
+
+      <pre><code>&lt;h3 class="component-desc text-dark"&gt;颜色（可在&lt;code&gt;settings.less&lt;/code&gt;中进行配置）：&lt;/h3&gt;
+      &lt;span class="text-danger"&gt;text-danger 危险&lt;/span&gt;
+      &lt;span class="text-warning"&gt;text-warning 警告&lt;/span&gt;
+      &lt;span class="text-calm"&gt;text-calm 冷静&lt;/span&gt;
+      &lt;span class="text-dream"&gt;text-dream 梦幻&lt;/span&gt;
+      &lt;span class="text-cute"&gt;text-cute 可爱&lt;/span&gt;
+      &lt;span class="text-growth"&gt;text-growth 生长&lt;/span&gt;
+      &lt;span class="text-dark"&gt;text-dark 黑暗&lt;/span&gt;
+      &lt;h3 class="component-desc text-dark"&gt;超链接：&lt;/h3&gt;
+      &lt;p&gt;
+        &lt;a href="javascript:;" class="text-danger"&gt;红色链接&lt;/a&gt;
+      &lt;/p&gt;
+      &lt;h3 class="component-desc text-dark"&gt;对齐方式：&lt;/h3&gt;
+      &lt;p class="text-left"&gt;text-left 靠左对齐&lt;/p&gt;
+      &lt;p class="text-center"&gt;text-center 居中对齐&lt;/p&gt;
+      &lt;p class="text-right"&gt;text-right 靠右对齐&lt;/p&gt;
+      &lt;p class="text-indent"&gt;text-indent 首行缩进两个字符&lt;/p&gt;
+      &lt;p class="text-ellipsis"&gt;text-ellipsis CSS 3省略号：文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号，文字超出容器宽度时自动显示省略号&lt;/p&gt;
+      </code></pre>
+
+      <h2>
+      <a id="标的组件" class="anchor" href="#%E6%A0%87%E7%9A%84%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>标的组件</h2>
+
+      <p>基本的标列表样式及布局，利用栅格系统可以对每个属性的宽度进行修改。</p>
+
+      <div class="container">
+        <div class="col-8">
+          <div class="project-list">
+            <div class="project-item">
+              <h3>
+                <a href="javascript:;">项目名称</a>
+              </h3>
+              <div class="project-attr rate col-3">
+                <p class="project-attr-desc">预期年化收益率</p>
+                <strong class="project-attr-val">15%</strong>
+              </div>
+              <div class="project-attr periods col-2">
+                <p class="project-attr-desc">借款期限</p>
+                <strong class="project-attr-val">12 <small>天</small></strong>
+              </div>
+              <div class="project-attr amount col-4">
+                <p class="project-attr-desc">项目金额</p>
+                <strong class="project-attr-val">100000 <small>元</small></strong>
+              </div>
+              <div class="project-attr invest col-3">
+                <a href="javascript:;" class="button button-danger">立即投标</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <pre><code>&lt;div class="container"&gt;
+        &lt;div class="col-8"&gt;
+          &lt;div class="project-list"&gt;
+            &lt;div class="project-item"&gt;
+              &lt;h3&gt;
+                &lt;a href="javascript:;"&gt;项目名称&lt;/a&gt;
+              &lt;/h3&gt;
+              &lt;div class="project-attr rate col-3"&gt;
+                &lt;p class="project-attr-desc"&gt;预期年化收益率&lt;/p&gt;
+                &lt;strong class="project-attr-val"&gt;15%&lt;/strong&gt;
+              &lt;/div&gt;
+              &lt;div class="project-attr periods col-2"&gt;
+                &lt;p class="project-attr-desc"&gt;借款期限&lt;/p&gt;
+                &lt;strong class="project-attr-val"&gt;12 &lt;small&gt;天&lt;/small&gt;&lt;/strong&gt;
+              &lt;/div&gt;
+              &lt;div class="project-attr amount col-4"&gt;
+                &lt;p class="project-attr-desc"&gt;项目金额&lt;/p&gt;
+                &lt;strong class="project-attr-val"&gt;100000 &lt;small&gt;元&lt;/small&gt;&lt;/strong&gt;
+              &lt;/div&gt;
+              &lt;div class="project-attr invest col-3"&gt;
+                &lt;a href="javascript:;" class="button button-danger"&gt;立即投标&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="usertype" class="col-3 text-right"&gt;用户类型：&lt;/label&gt;
-        &lt;select id="usertype" class="form-control"&gt;
-          &lt;option value="1"&gt;普通用户&lt;/option&gt;
-          &lt;option value="2"&gt;管理员&lt;/option&gt;
-        &lt;/select&gt;
+      </code></pre>
+
+      <h2>
+      <a id="按钮样式" class="anchor" href="#%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>按钮样式</h2>
+
+      <button class="button">默认按钮</button>
+      <button class="button button-danger">危险按钮</button>
+      <button class="button button-warning">警告按钮</button>
+      <button class="button button-calm">蓝色按钮</button>
+      <button class="button button-dream">紫色按钮</button>
+      <button class="button button-cute">粉色按钮</button>
+      <button class="button button-growth">绿色按钮</button>
+      <button class="button button-dark">黑色按钮</button>
+      <p>
+        <button class="button button-clear">默认无边框背景按钮</button>
+        <button class="button button-danger button-clear">危险无边框背景按钮</button>
+        <button class="button button-warning button-clear">警告无边框背景按钮</button>
+        <button class="button button-calm button-clear">蓝色无边框背景按钮</button>
+        <button class="button button-dream button-clear">紫色无边框背景按钮</button>
+        <button class="button button-cute button-clear">粉色无边框背景按钮</button>
+        <button class="button button-growth button-clear">绿色无边框背景按钮</button>
+        <button class="button button-dark button-clear">黑色无边框背景按钮</button>
+      </p>
+      <p>
+        <button class="button button-calm" disabled="disabled">禁用状态按钮</button>
+      </p>
+      <p>
+        <button class="button button-block button-calm">块级按钮</button>
+      </p>
+
+      <pre><code>&lt;button class="button"&gt;默认按钮&lt;/button&gt;
+      &lt;button class="button button-danger"&gt;危险按钮&lt;/button&gt;
+      &lt;button class="button button-warning"&gt;警告按钮&lt;/button&gt;
+      &lt;button class="button button-calm"&gt;蓝色按钮&lt;/button&gt;
+      &lt;button class="button button-dream"&gt;紫色按钮&lt;/button&gt;
+      &lt;button class="button button-cute"&gt;粉色按钮&lt;/button&gt;
+      &lt;button class="button button-growth"&gt;绿色按钮&lt;/button&gt;
+      &lt;button class="button button-dark"&gt;黑色按钮&lt;/button&gt;
+      &lt;p&gt;
+        &lt;button class="button button-clear"&gt;默认无边框背景按钮&lt;/button&gt;
+        &lt;button class="button button-danger button-clear"&gt;危险无边框背景按钮&lt;/button&gt;
+        &lt;button class="button button-warning button-clear"&gt;警告无边框背景按钮&lt;/button&gt;
+        &lt;button class="button button-calm button-clear"&gt;蓝色无边框背景按钮&lt;/button&gt;
+        &lt;button class="button button-dream button-clear"&gt;紫色无边框背景按钮&lt;/button&gt;
+        &lt;button class="button button-cute button-clear"&gt;粉色无边框背景按钮&lt;/button&gt;
+        &lt;button class="button button-growth button-clear"&gt;绿色无边框背景按钮&lt;/button&gt;
+        &lt;button class="button button-dark button-clear"&gt;黑色无边框背景按钮&lt;/button&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;button class="button button-calm" disabled="disabled"&gt;禁用状态按钮&lt;/button&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;button class="button button-block button-calm"&gt;块级按钮&lt;/button&gt;
+      &lt;/p&gt;
+      </code></pre>
+
+      <h2>
+      <a id="表单样式" class="anchor" href="#%E8%A1%A8%E5%8D%95%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>表单样式</h2>
+
+      <p>除垂直排列的表单之外，给 <code>form</code> 加上 <code>form-inline</code> 的 className，则会以行内表单样式呈现。</p>
+
+      <p>表单可具备三种状态：错误（红色）、警告（橙色）、成功（绿色），给 <code>form-group</code> 分别加上 <code>form-group-error</code>、<code>form-group-warning</code>、<code>form-group-success</code> 即可显示对应状态。</p>
+
+      <div class="container">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <form>
+            <div class="form-group form-group-error">
+              <label for="username" class="col-3 text-right">用户名：</label>
+              <input id="username" type="text" class="form-control">
+              <span class="form-control-note">*用户名为必填</span>
+            </div>
+            <div class="form-group">
+              <label for="lasttime" class="col-3 text-right">上次登录时间：</label>
+              <div class="input-group">
+                <input id="lasttime" type="text" class="form-control" readonly="readonly" value="123">
+                <span class="input-group-addon">只读</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mobile_vcode" class="col-3 text-right">手机验证码：</label>
+              <div class="input-group">
+                <input id="mobile_vcode" type="text" class="form-control" readonly="readonly" value="123">
+                <span class="input-group-addon input-group-addon-button">
+                  <button class="button" type="button">发送验证码</button>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="status-saved" class="col-3 text-right">登录状态保存：</label>
+              <div class="input-group">
+                <input id="status-saved" type="text" class="form-control" value="1">
+                <span class="input-group-addon input-group-addon-select">
+                  <select class="form-control">
+                    <option value="1">天</option>
+                    <option value="2">个月</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="usertype" class="col-3 text-right">用户类型：</label>
+              <select id="usertype" class="form-control">
+                <option value="1">普通用户</option>
+                <option value="2">管理员</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vcode" class="col-3 text-right">验证码：</label>
+              <input id="vcode" type="text" class="form-control form-control-small">
+              <a href="javascript:;">
+                <img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode">
+              </a>
+            </div>
+            <div class="form-group">
+              <div class="col-3"></div>
+              <label class="checkbox">
+                <input type="checkbox">
+                记住我一星期
+              </label>
+            </div>
+            <div class="form-group">
+              <div class="col-3"></div>
+              <label class="radio">
+                <input type="radio" name="sex">
+                男
+              </label>
+              <label class="radio">
+                <input type="radio" name="sex">
+                女
+              </label>
+            </div>
+            <div class="form-group">
+              <div class="col-3"></div>
+              <textarea class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="col-3"></div>
+              <button class="button button-calm">立即登录</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <pre><code>&lt;div class="container"&gt;
+        &lt;div class="col-2"&gt;&lt;/div&gt;
+        &lt;div class="col-8"&gt;
+          &lt;form&gt;
+            &lt;div class="form-group form-group-error"&gt;
+              &lt;label for="username" class="col-3 text-right"&gt;用户名：&lt;/label&gt;
+              &lt;input id="username" type="text" class="form-control"&gt;
+              &lt;span class="form-control-note"&gt;*用户名为必填&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="lasttime" class="col-3 text-right"&gt;上次登录时间：&lt;/label&gt;
+              &lt;div class="input-group"&gt;
+                &lt;input id="lasttime" type="text" class="form-control" readonly="readonly" value="123"&gt;
+                &lt;span class="input-group-addon"&gt;只读&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="mobile_vcode" class="col-3 text-right"&gt;手机验证码：&lt;/label&gt;
+              &lt;div class="input-group"&gt;
+                &lt;input id="mobile_vcode" type="text" class="form-control" readonly="readonly" value="123"&gt;
+                &lt;span class="input-group-addon input-group-addon-button"&gt;
+                  &lt;button class="button" type="button"&gt;发送验证码&lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="status-saved" class="col-3 text-right"&gt;登录状态保存：&lt;/label&gt;
+              &lt;div class="input-group"&gt;
+                &lt;input id="status-saved" type="text" class="form-control" value="1"&gt;
+                &lt;span class="input-group-addon input-group-addon-select"&gt;
+                  &lt;select class="form-control"&gt;
+                    &lt;option value="1"&gt;天&lt;/option&gt;
+                    &lt;option value="2"&gt;个月&lt;/option&gt;
+                  &lt;/select&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="usertype" class="col-3 text-right"&gt;用户类型：&lt;/label&gt;
+              &lt;select id="usertype" class="form-control"&gt;
+                &lt;option value="1"&gt;普通用户&lt;/option&gt;
+                &lt;option value="2"&gt;管理员&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="vcode" class="col-3 text-right"&gt;验证码：&lt;/label&gt;
+              &lt;input id="vcode" type="text" class="form-control form-control-small"&gt;
+              &lt;a href="javascript:;"&gt;
+                &lt;img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode"&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;div class="col-3"&gt;&lt;/div&gt;
+              &lt;label class="checkbox"&gt;
+                &lt;input type="checkbox"&gt;
+                记住我一星期
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;div class="col-3"&gt;&lt;/div&gt;
+              &lt;label class="radio"&gt;
+                &lt;input type="radio" name="sex"&gt;
+                男
+              &lt;/label&gt;
+              &lt;label class="radio"&gt;
+                &lt;input type="radio" name="sex"&gt;
+                女
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;div class="col-3"&gt;&lt;/div&gt;
+              &lt;textarea class="form-control"&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;div class="col-3"&gt;&lt;/div&gt;
+              &lt;button class="button button-calm"&gt;立即登录&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+        &lt;div class="col-2"&gt;&lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;label for="vcode" class="col-3 text-right"&gt;验证码：&lt;/label&gt;
-        &lt;input id="vcode" type="text" class="form-control form-control-small"&gt;
-        &lt;a href="javascript:;"&gt;
-          &lt;img src="https://www.baidu.com/img/bd_logo1.png" alt="验证码" class="form-vcode"&gt;
-        &lt;/a&gt;
+      </code></pre>
+
+      <h2>
+      <a id="信息提示样式" class="anchor" href="#%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>信息提示样式</h2>
+
+      <div class="caution-box">
+        默认提示
+      </div>
+      <div class="caution-box caution-danger">
+        危险提示
+      </div>
+      <div class="caution-box caution-warning">
+        警告提示
+      </div>
+      <div class="caution-box caution-info">
+        信息提示
+      </div>
+      <div class="caution-box caution-success">
+        成功提示
+      </div>
+
+      <pre><code>&lt;div class="caution-box"&gt;
+        默认提示
       &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;div class="col-3"&gt;&lt;/div&gt;
-        &lt;label class="checkbox"&gt;
-          &lt;input type="checkbox"&gt;
-          记住我一星期
-        &lt;/label&gt;
+      &lt;div class="caution-box caution-danger"&gt;
+        危险提示
       &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;div class="col-3"&gt;&lt;/div&gt;
-        &lt;label class="radio"&gt;
-          &lt;input type="radio" name="sex"&gt;
-          男
-        &lt;/label&gt;
-        &lt;label class="radio"&gt;
-          &lt;input type="radio" name="sex"&gt;
-          女
-        &lt;/label&gt;
+      &lt;div class="caution-box caution-warning"&gt;
+        警告提示
       &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;div class="col-3"&gt;&lt;/div&gt;
-        &lt;textarea class="form-control"&gt;&lt;/textarea&gt;
+      &lt;div class="caution-box caution-info"&gt;
+        信息提示
       &lt;/div&gt;
-      &lt;div class="form-group"&gt;
-        &lt;div class="col-3"&gt;&lt;/div&gt;
-        &lt;button class="button button-calm"&gt;立即登录&lt;/button&gt;
+      &lt;div class="caution-box caution-success"&gt;
+        成功提示
       &lt;/div&gt;
-    &lt;/form&gt;
-  &lt;/div&gt;
-  &lt;div class="col-2"&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+      </code></pre>
 
-<h2>
-<a id="信息提示样式" class="anchor" href="#%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>信息提示样式</h2>
+      <h2>
+      <a id="表格组件" class="anchor" href="#%E8%A1%A8%E6%A0%BC%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>表格组件</h2>
 
-<pre><code>&lt;div class="caution-box"&gt;
-  默认提示
-&lt;/div&gt;
-&lt;div class="caution-box caution-danger"&gt;
-  危险提示
-&lt;/div&gt;
-&lt;div class="caution-box caution-warning"&gt;
-  警告提示
-&lt;/div&gt;
-&lt;div class="caution-box caution-info"&gt;
-  信息提示
-&lt;/div&gt;
-&lt;div class="caution-box caution-success"&gt;
-  成功提示
-&lt;/div&gt;
-</code></pre>
+      <p>表格组件提供默认的表格样式去除了 collapse 及 spacing，并且给 th 添加了下边框。与此同时也提供了 <code>table-bordered</code> className 给表格加上边框、<code>table-hover</code> 给表格加上鼠标悬浮效果、<code>table-striped</code> 使 <code>tbody</code> 中奇数行与偶数行的背景颜色不一致。</p>
 
-<h2>
-<a id="表格组件" class="anchor" href="#%E8%A1%A8%E6%A0%BC%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>表格组件</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>小丽</td>
+            <td>女</td>
+            <td>24</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-bordered table-hover table-striped light-bg">
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th class="sorter desc">年龄</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>小丽</td>
+            <td>女</td>
+            <td>24</td>
+          </tr>
+        </tbody>
+      </table>
 
-<p>表格组件提供默认的表格样式去除了 collapse 及 spacing，并且给 th 添加了下边框。与此同时也提供了 <code>table-bordered</code> className 给表格加上边框、<code>table-hover</code> 给表格加上鼠标悬浮效果、<code>table-striped</code> 使 <code>tbody</code> 中奇数行与偶数行的背景颜色不一致。</p>
-
-<pre><code>&lt;table class="table"&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;姓名&lt;/th&gt;
-      &lt;th&gt;性别&lt;/th&gt;
-      &lt;th&gt;年龄&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;张三&lt;/td&gt;
-      &lt;td&gt;男&lt;/td&gt;
-      &lt;td&gt;28&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;小丽&lt;/td&gt;
-      &lt;td&gt;女&lt;/td&gt;
-      &lt;td&gt;24&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="table table-bordered table-hover table-striped light-bg"&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;姓名&lt;/th&gt;
-      &lt;th&gt;性别&lt;/th&gt;
-      &lt;th class="sorter desc"&gt;年龄&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;张三&lt;/td&gt;
-      &lt;td&gt;男&lt;/td&gt;
-      &lt;td&gt;28&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;小丽&lt;/td&gt;
-      &lt;td&gt;女&lt;/td&gt;
-      &lt;td&gt;24&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</code></pre>
-
-<h2>
-<a id="选项卡切换样式" class="anchor" href="#%E9%80%89%E9%A1%B9%E5%8D%A1%E5%88%87%E6%8D%A2%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>选项卡切换样式</h2>
-
-<p>给 <code>tabs-header</code> 中的 <code>li</code> 标签和对应的 <code>tabs-content</code> 加上 <code>active</code> className 则会选中中该选项卡。</p>
-
-<p><em>注：暂不支持点击切换不同的选项卡</em></p>
-
-<pre><code>&lt;div class="tabs"&gt;
-  &lt;ul class="tabs-header"&gt;
-    &lt;li class="active"&gt;
-      &lt;a href="javascript:;"&gt;工作经历&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="javascript:;"&gt;曾获荣誉&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div class="tabs-content active"&gt;
-    &lt;p&gt;2011 家里蹲大学&lt;/p&gt;
-    &lt;p&gt;2012 车库研究院&lt;/p&gt;
-    &lt;p&gt;2015 社会大学&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="tabs-content"&gt;
-    &lt;p&gt;2011 家里蹲大学&lt;/p&gt;
-    &lt;p&gt;2012 车库研究院&lt;/p&gt;
-    &lt;p&gt;2015 社会大学&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h2>
-<a id="过滤器样式" class="anchor" href="#%E8%BF%87%E6%BB%A4%E5%99%A8%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>过滤器样式</h2>
-
-<pre><code>&lt;dl class="filter"&gt;
-  &lt;dt&gt;时间&lt;/dt&gt;
-  &lt;dd&gt;
-    &lt;input type="date" class="form-control"&gt;
-  &lt;/dd&gt;
-  &lt;dd&gt;~&lt;/dd&gt;
-  &lt;dd&gt;
-    &lt;input type="date" class="form-control"&gt;
-  &lt;/dd&gt;
-  &lt;dt&gt;成色&lt;/dt&gt;
-  &lt;dd class="active"&gt;
-    &lt;a href="javascript:;"&gt;全新&lt;/a&gt;
-  &lt;/dd&gt;
-  &lt;dd&gt;
-    &lt;a href="javascript:;"&gt;九成新&lt;/a&gt;
-  &lt;/dd&gt;
-  &lt;dd&gt;
-    &lt;a href="javascript:;"&gt;八成新&lt;/a&gt;
-  &lt;/dd&gt;
-&lt;/dl&gt;
-</code></pre>
-
-<h2>
-<a id="翻页按钮样式" class="anchor" href="#%E7%BF%BB%E9%A1%B5%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>翻页按钮样式</h2>
-
-<p>可以通过 <code>text-center</code> 和 <code>text-right</code> 使翻页器居中或靠右。</p>
-
-<p>给其中的 <code>a</code> 、 <code>span</code> 标签添加 <code>disabled</code> className 可以使其显示被禁用的样式，<strong>但点击事件并不能真正的被禁用</strong></p>
-
-<pre><code>&lt;div class="pagination text-center"&gt;
-  &lt;a href="javascript:;" class="disabled"&gt;上一页&lt;/a&gt;
-  &lt;a href="javascript:;"&gt;1&lt;/a&gt;
-  &lt;a href="javascript:;"&gt;2&lt;/a&gt;
-  &lt;a href="javascript:;"&gt;3&lt;/a&gt;
-  ...
-  &lt;a href="javascript:;"&gt;20&lt;/a&gt;
-  &lt;a href="javascript:;"&gt;下一页&lt;/a&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h2>
-<a id="标签组件" class="anchor" href="#%E6%A0%87%E7%AD%BE%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>标签组件</h2>
-
-<p>加上label属性便变成一个标签，自动调整大小。</p>
-
-<pre><code>&lt;span class="label"&gt;New&lt;/span&gt;
-&lt;span class="label label-danger"&gt;New&lt;/span&gt;
-&lt;span class="label label-warning"&gt;New&lt;/span&gt;
-&lt;span class="label label-calm"&gt;New&lt;/span&gt;
-&lt;span class="label label-cute"&gt;New&lt;/span&gt;
-&lt;span class="label label-growth"&gt;New&lt;/span&gt;
-&lt;span class="label label-dark"&gt;New&lt;/span&gt;
-</code></pre>
-
-<h2>
-<a id="徽章组件" class="anchor" href="#%E5%BE%BD%E7%AB%A0%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>徽章组件</h2>
-
-<p>分别为普通状态，在按钮中的状态。当不存在值时，就隐藏</p>
-
-<pre><code>&lt;p&gt;
-  &lt;span class="badge badge-danger"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-warning"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-calm"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-cute"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-growth"&gt;2&lt;/span&gt;
-  &lt;span class="badge badge-dark"&gt;2&lt;/span&gt;
-&lt;/p&gt;
-&lt;button class="button button-danger"&gt;新消息&lt;span class="badge"&gt;99&lt;/span&gt;&lt;/button&gt;
-</code></pre>
-
-<h2>
-<a id="消息提示组件" class="anchor" href="#%E6%B6%88%E6%81%AF%E6%8F%90%E7%A4%BA%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>消息提示组件</h2>
-
-<p>定义消息位置：给 <code>prompt-box-queue</code> 元素加上 <code>top-right</code> （右上方）、 <code>bottom-right</code> （右下方）、 <code>top-center</code> （中上方）、 <code>bottom-center</code> （中下方）。</p>
-
-<p>定义消息样式：给 <code>prompt-box</code> 元素加上 <code>prompt-info</code> （蓝色信息框）、 <code>prompt-danger</code> （红色错误框）、 <code>prompt-success</code> （绿色成功框）。</p>
-
-<p><em>注意：暂无 JavaScript 代码，消息框的显示与隐藏需要额外编写 JavaScript 代码。</em></p>
-
-<pre><code>&lt;div class="prompt-box-queue top-center" id="demo-prompt-queue" style="display: none;"&gt;
-  &lt;div class="prompt-box"&gt;
-    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
-    &lt;h3&gt;系统提示&lt;/h3&gt;
-    &lt;p&gt;这是提示内容&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="prompt-box prompt-info"&gt;
-    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
-    &lt;h3&gt;系统提示&lt;/h3&gt;
-    &lt;p&gt;有一个提示框出现了&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="prompt-box prompt-danger"&gt;
-    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
-    &lt;h3&gt;系统提示&lt;/h3&gt;
-    &lt;p&gt;操作错误了&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="prompt-box prompt-success"&gt;
-    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
-    &lt;h3&gt;系统提示&lt;/h3&gt;
-    &lt;p&gt;操作成功了&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="prompt-box prompt-warning"&gt;
-    &lt;i class="prompt-icon"&gt;&lt;/i&gt;
-    &lt;h3&gt;系统提示&lt;/h3&gt;
-    &lt;p&gt;操作将会影响到系统稳定&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;button class="button button-calm" onclick="document.getElementById('demo-prompt-queue').style.display = 'block'"&gt;点击显示消息提示框&lt;/button&gt;
-</code></pre>
-
-<h2>
-<a id="对话框组件" class="anchor" href="#%E5%AF%B9%E8%AF%9D%E6%A1%86%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>对话框组件</h2>
-
-<p>如果需要模态背景，则给 <code>dialog-container</code> 加上 <code>has-backdrop</code> 的 className。</p>
-
-<p><em>注意：暂无 JavaScript 代码，对话框的显示与隐藏需要额外编写 JavaScript 代码。</em></p>
-
-<pre><code>&lt;div class="dialog-container has-backdrop" id="demo-dialog"&gt;
-  &lt;div class="dialog-box"&gt;
-    &lt;h3&gt;确认框&lt;/h3&gt;
-    &lt;p&gt;您确定要继续吗？&lt;/p&gt;
-    &lt;div class="dialog-box-buttons"&gt;
-      &lt;button class="button"&gt;取消&lt;/button&gt;
-      &lt;button class="button button-growth"&gt;确定&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;button class="button button-growth" onclick="document.getElementById('demo-dialog').className += ' active'"&gt;点击显示对话框&lt;/button&gt;
-</code></pre>
-
-<h2>
-<a id="模态框组件" class="anchor" href="#%E6%A8%A1%E6%80%81%E6%A1%86%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>模态框组件</h2>
-
-<p><em>注意：暂无 JavaScript 代码，对话框的显示与隐藏需要额外编写 JavaScript 代码。</em></p>
-
-<pre><code>&lt;div class="modal-container" id="demo-modal"&gt;
-  &lt;div class="modal-box"&gt;
-    &lt;h3&gt;
-      请确认您的机票预定信息
-      &lt;button class="button modal-close-button"&gt;&lt;/button&gt;
-    &lt;/h3&gt;
-    &lt;div class="modal-content"&gt;
-      &lt;table class="table table-bordered table-hover table-striped light-bg"&gt;
+      <pre><code>&lt;table class="table"&gt;
         &lt;thead&gt;
           &lt;tr&gt;
-            &lt;th&gt;乘机人&lt;/th&gt;
-            &lt;th&gt;身份证号码&lt;/th&gt;
-            &lt;th&gt;时间&lt;/th&gt;
+            &lt;th&gt;姓名&lt;/th&gt;
+            &lt;th&gt;性别&lt;/th&gt;
+            &lt;th&gt;年龄&lt;/th&gt;
           &lt;/tr&gt;
         &lt;/thead&gt;
         &lt;tbody&gt;
           &lt;tr&gt;
             &lt;td&gt;张三&lt;/td&gt;
-            &lt;td&gt;330284759238420192&lt;/td&gt;
-            &lt;td&gt;2015-12-06&lt;/td&gt;
+            &lt;td&gt;男&lt;/td&gt;
+            &lt;td&gt;28&lt;/td&gt;
           &lt;/tr&gt;
           &lt;tr&gt;
-            &lt;td&gt;李四&lt;/td&gt;
-            &lt;td&gt;330284759238420192&lt;/td&gt;
-            &lt;td&gt;2015-12-06&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td&gt;王麻子&lt;/td&gt;
-            &lt;td&gt;330284759238420192&lt;/td&gt;
-            &lt;td&gt;2015-12-06&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td&gt;二子&lt;/td&gt;
-            &lt;td&gt;330284759238420192&lt;/td&gt;
-            &lt;td&gt;2015-12-06&lt;/td&gt;
+            &lt;td&gt;小丽&lt;/td&gt;
+            &lt;td&gt;女&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
           &lt;/tr&gt;
         &lt;/tbody&gt;
       &lt;/table&gt;
-    &lt;/div&gt;
-    &lt;div class="modal-box-buttons"&gt;
-      &lt;button class="button"&gt;返回修改&lt;/button&gt;
-      &lt;button class="button button-danger"&gt;确认无误&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;button class="button button-dream" onclick="document.getElementById('demo-modal').className += ' active'"&gt;点击显示模态框&lt;/button&gt;
-</code></pre>
+      &lt;table class="table table-bordered table-hover table-striped light-bg"&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;姓名&lt;/th&gt;
+            &lt;th&gt;性别&lt;/th&gt;
+            &lt;th class="sorter desc"&gt;年龄&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;张三&lt;/td&gt;
+            &lt;td&gt;男&lt;/td&gt;
+            &lt;td&gt;28&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;小丽&lt;/td&gt;
+            &lt;td&gt;女&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+      </code></pre>
+
+      <h2>
+      <a id="选项卡切换样式" class="anchor" href="#%E9%80%89%E9%A1%B9%E5%8D%A1%E5%88%87%E6%8D%A2%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>选项卡切换样式</h2>
+
+      <p>给 <code>tabs-header</code> 中的 <code>li</code> 标签和对应的 <code>tabs-content</code> 加上 <code>active</code> className 则会选中中该选项卡。</p>
+
+      <p><em>注：暂不支持点击切换不同的选项卡</em></p>
+
+      <div class="tabs">
+        <ul class="tabs-header">
+          <li class="active">
+            <a href="javascript:;">工作经历</a>
+          </li>
+          <li>
+            <a href="javascript:;">曾获荣誉</a>
+          </li>
+        </ul>
+        <div class="tabs-content active">
+          <p>2011 家里蹲大学</p>
+          <p>2012 车库研究院</p>
+          <p>2015 社会大学</p>
+        </div>
+        <div class="tabs-content">
+          <p>2011 家里蹲大学</p>
+          <p>2012 车库研究院</p>
+          <p>2015 社会大学</p>
+        </div>
+      </div>
+
+      <pre><code>&lt;div class="tabs"&gt;
+        &lt;ul class="tabs-header"&gt;
+          &lt;li class="active"&gt;
+            &lt;a href="javascript:;"&gt;工作经历&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="javascript:;"&gt;曾获荣誉&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class="tabs-content active"&gt;
+          &lt;p&gt;2011 家里蹲大学&lt;/p&gt;
+          &lt;p&gt;2012 车库研究院&lt;/p&gt;
+          &lt;p&gt;2015 社会大学&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="tabs-content"&gt;
+          &lt;p&gt;2011 家里蹲大学&lt;/p&gt;
+          &lt;p&gt;2012 车库研究院&lt;/p&gt;
+          &lt;p&gt;2015 社会大学&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      </code></pre>
+
+      <h2>
+      <a id="过滤器样式" class="anchor" href="#%E8%BF%87%E6%BB%A4%E5%99%A8%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>过滤器样式</h2>
+
+      <dl class="filter">
+        <dt>时间</dt>
+        <dd>
+          <input type="date" class="form-control">
+        </dd>
+        <dd>~</dd>
+        <dd>
+          <input type="date" class="form-control">
+        </dd>
+        <dt>成色</dt>
+        <dd class="active">
+          <a href="javascript:;">全新</a>
+        </dd>
+        <dd>
+          <a href="javascript:;">九成新</a>
+        </dd>
+        <dd>
+          <a href="javascript:;">八成新</a>
+        </dd>
+      </dl>
+
+      <pre><code>&lt;dl class="filter"&gt;
+        &lt;dt&gt;时间&lt;/dt&gt;
+        &lt;dd&gt;
+          &lt;input type="date" class="form-control"&gt;
+        &lt;/dd&gt;
+        &lt;dd&gt;~&lt;/dd&gt;
+        &lt;dd&gt;
+          &lt;input type="date" class="form-control"&gt;
+        &lt;/dd&gt;
+        &lt;dt&gt;成色&lt;/dt&gt;
+        &lt;dd class="active"&gt;
+          &lt;a href="javascript:;"&gt;全新&lt;/a&gt;
+        &lt;/dd&gt;
+        &lt;dd&gt;
+          &lt;a href="javascript:;"&gt;九成新&lt;/a&gt;
+        &lt;/dd&gt;
+        &lt;dd&gt;
+          &lt;a href="javascript:;"&gt;八成新&lt;/a&gt;
+        &lt;/dd&gt;
+      &lt;/dl&gt;
+      </code></pre>
+
+      <h2>
+      <a id="翻页按钮样式" class="anchor" href="#%E7%BF%BB%E9%A1%B5%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>翻页按钮样式</h2>
+
+      <p>可以通过 <code>text-center</code> 和 <code>text-right</code> 使翻页器居中或靠右。</p>
+
+      <p>给其中的 <code>a</code> 、 <code>span</code> 标签添加 <code>disabled</code> className 可以使其显示被禁用的样式，<strong>但点击事件并不能真正的被禁用</strong></p>
+
+      <div class="pagination text-center">
+        <a href="javascript:;" class="disabled">上一页</a>
+        <a href="javascript:;">1</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">3</a>
+        ...
+        <a href="javascript:;">20</a>
+        <a href="javascript:;">下一页</a>
+      </div>
+
+      <pre><code>&lt;div class="pagination text-center"&gt;
+        &lt;a href="javascript:;" class="disabled"&gt;上一页&lt;/a&gt;
+        &lt;a href="javascript:;"&gt;1&lt;/a&gt;
+        &lt;a href="javascript:;"&gt;2&lt;/a&gt;
+        &lt;a href="javascript:;"&gt;3&lt;/a&gt;
+        ...
+        &lt;a href="javascript:;"&gt;20&lt;/a&gt;
+        &lt;a href="javascript:;"&gt;下一页&lt;/a&gt;
+      &lt;/div&gt;
+      </code></pre>
+
+      <h2>
+      <a id="标签组件" class="anchor" href="#%E6%A0%87%E7%AD%BE%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>标签组件</h2>
+
+      <p>加上label属性便变成一个标签，自动调整大小。</p>
+
+      <p class="component-desc">加上label属性便变成一个标签，自动调整大小</p>
+      <span class="label">New</span>
+      <span class="label label-danger">New</span>
+      <span class="label label-warning">New</span>
+      <span class="label label-calm">New</span>
+      <span class="label label-cute">New</span>
+      <span class="label label-growth">New</span>
+      <span class="label label-dark">New</span>
+
+      <pre><code>&lt;span class="label"&gt;New&lt;/span&gt;
+      &lt;span class="label label-danger"&gt;New&lt;/span&gt;
+      &lt;span class="label label-warning"&gt;New&lt;/span&gt;
+      &lt;span class="label label-calm"&gt;New&lt;/span&gt;
+      &lt;span class="label label-cute"&gt;New&lt;/span&gt;
+      &lt;span class="label label-growth"&gt;New&lt;/span&gt;
+      &lt;span class="label label-dark"&gt;New&lt;/span&gt;
+      </code></pre>
+
+      <h2>
+      <a id="徽章组件" class="anchor" href="#%E5%BE%BD%E7%AB%A0%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>徽章组件</h2>
+
+      <p>分别为普通状态，在按钮中的状态。当不存在值时，就隐藏</p>
+
+      <p>
+        <span class="badge badge-danger">2</span>
+        <span class="badge badge-warning">2</span>
+        <span class="badge badge-calm">2</span>
+        <span class="badge badge-cute">2</span>
+        <span class="badge badge-growth">2</span>
+        <span class="badge badge-dark">2</span>
+      </p>
+      <button class="button button-danger">新消息<span class="badge">99</span></button>
+
+      <pre><code>&lt;p&gt;
+        &lt;span class="badge badge-danger"&gt;2&lt;/span&gt;
+        &lt;span class="badge badge-warning"&gt;2&lt;/span&gt;
+        &lt;span class="badge badge-calm"&gt;2&lt;/span&gt;
+        &lt;span class="badge badge-cute"&gt;2&lt;/span&gt;
+        &lt;span class="badge badge-growth"&gt;2&lt;/span&gt;
+        &lt;span class="badge badge-dark"&gt;2&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;button class="button button-danger"&gt;新消息&lt;span class="badge"&gt;99&lt;/span&gt;&lt;/button&gt;
+      </code></pre>
+
+      <h2>
+      <a id="消息提示组件" class="anchor" href="#%E6%B6%88%E6%81%AF%E6%8F%90%E7%A4%BA%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>消息提示组件</h2>
+
+      <p>定义消息位置：给 <code>prompt-box-queue</code> 元素加上 <code>top-right</code> （右上方）、 <code>bottom-right</code> （右下方）、 <code>top-center</code> （中上方）、 <code>bottom-center</code> （中下方）。</p>
+
+      <p>定义消息样式：给 <code>prompt-box</code> 元素加上 <code>prompt-info</code> （蓝色信息框）、 <code>prompt-danger</code> （红色错误框）、 <code>prompt-success</code> （绿色成功框）。</p>
+
+      <p><em>注意：暂无 JavaScript 代码，消息框的显示与隐藏需要额外编写 JavaScript 代码。</em></p>
+
+      <div class="prompt-box-queue top-center" id="demo-prompt-queue" style="display: none;">
+        <div class="prompt-box">
+          <i class="prompt-icon"></i>
+          <h3>系统提示</h3>
+          <p>这是提示内容</p>
+        </div>
+        <div class="prompt-box prompt-info">
+          <i class="prompt-icon"></i>
+          <h3>系统提示</h3>
+          <p>有一个提示框出现了</p>
+        </div>
+        <div class="prompt-box prompt-danger">
+          <i class="prompt-icon"></i>
+          <h3>系统提示</h3>
+          <p>操作错误了</p>
+        </div>
+        <div class="prompt-box prompt-success">
+          <i class="prompt-icon"></i>
+          <h3>系统提示</h3>
+          <p>操作成功了</p>
+        </div>
+        <div class="prompt-box prompt-warning">
+          <i class="prompt-icon"></i>
+          <h3>系统提示</h3>
+          <p>操作将会影响到系统稳定</p>
+        </div>
+      </div>
+      <button class="button button-calm" onclick="document.getElementById('demo-prompt-queue').style.display = 'block'">点击显示消息提示框</button>
+
+      <pre><code>&lt;div class="prompt-box-queue top-center" id="demo-prompt-queue" style="display: none;"&gt;
+        &lt;div class="prompt-box"&gt;
+          &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+          &lt;h3&gt;系统提示&lt;/h3&gt;
+          &lt;p&gt;这是提示内容&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="prompt-box prompt-info"&gt;
+          &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+          &lt;h3&gt;系统提示&lt;/h3&gt;
+          &lt;p&gt;有一个提示框出现了&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="prompt-box prompt-danger"&gt;
+          &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+          &lt;h3&gt;系统提示&lt;/h3&gt;
+          &lt;p&gt;操作错误了&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="prompt-box prompt-success"&gt;
+          &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+          &lt;h3&gt;系统提示&lt;/h3&gt;
+          &lt;p&gt;操作成功了&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="prompt-box prompt-warning"&gt;
+          &lt;i class="prompt-icon"&gt;&lt;/i&gt;
+          &lt;h3&gt;系统提示&lt;/h3&gt;
+          &lt;p&gt;操作将会影响到系统稳定&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button class="button button-calm" onclick="document.getElementById('demo-prompt-queue').style.display = 'block'"&gt;点击显示消息提示框&lt;/button&gt;
+      </code></pre>
+
+      <h2>
+      <a id="对话框组件" class="anchor" href="#%E5%AF%B9%E8%AF%9D%E6%A1%86%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>对话框组件</h2>
+
+      <p>如果需要模态背景，则给 <code>dialog-container</code> 加上 <code>has-backdrop</code> 的 className。</p>
+
+      <p><em>注意：暂无 JavaScript 代码，对话框的显示与隐藏需要额外编写 JavaScript 代码。</em></p>
+
+      <div class="dialog-container has-backdrop" id="demo-dialog">
+        <div class="dialog-box">
+          <h3>确认框</h3>
+          <p>您确定要继续吗？</p>
+          <div class="dialog-box-buttons">
+            <button class="button">取消</button>
+            <button class="button button-growth">确定</button>
+          </div>
+        </div>
+      </div>
+      <button class="button button-growth" onclick="document.getElementById('demo-dialog').className += ' active'">点击显示对话框</button>
+    
+      <pre><code>&lt;div class="dialog-container has-backdrop" id="demo-dialog"&gt;
+        &lt;div class="dialog-box"&gt;
+          &lt;h3&gt;确认框&lt;/h3&gt;
+          &lt;p&gt;您确定要继续吗？&lt;/p&gt;
+          &lt;div class="dialog-box-buttons"&gt;
+            &lt;button class="button"&gt;取消&lt;/button&gt;
+            &lt;button class="button button-growth"&gt;确定&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button class="button button-growth" onclick="document.getElementById('demo-dialog').className += ' active'"&gt;点击显示对话框&lt;/button&gt;
+      </code></pre>
+
+      <h2>
+      <a id="模态框组件" class="anchor" href="#%E6%A8%A1%E6%80%81%E6%A1%86%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>模态框组件</h2>
+
+      <p><em>注意：暂无 JavaScript 代码，对话框的显示与隐藏需要额外编写 JavaScript 代码。</em></p>
+
+      <div class="modal-container" id="demo-modal">
+        <div class="modal-box">
+          <h3>
+            请确认您的机票预定信息
+            <button class="button modal-close-button"></button>
+          </h3>
+          <div class="modal-content">
+            <table class="table table-bordered table-hover table-striped light-bg">
+              <thead>
+                <tr>
+                  <th>乘机人</th>
+                  <th>身份证号码</th>
+                  <th>时间</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>张三</td>
+                  <td>330284759238420192</td>
+                  <td>2015-12-06</td>
+                </tr>
+                <tr>
+                  <td>李四</td>
+                  <td>330284759238420192</td>
+                  <td>2015-12-06</td>
+                </tr>
+                <tr>
+                  <td>王麻子</td>
+                  <td>330284759238420192</td>
+                  <td>2015-12-06</td>
+                </tr>
+                <tr>
+                  <td>二子</td>
+                  <td>330284759238420192</td>
+                  <td>2015-12-06</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-box-buttons">
+            <button class="button">返回修改</button>
+            <button class="button button-danger">确认无误</button>
+          </div>
+        </div>
+      </div>
+      <button class="button button-dream" onclick="document.getElementById('demo-modal').className += ' active'">点击显示模态框</button>
+
+      <pre><code>&lt;div class="modal-container" id="demo-modal"&gt;
+        &lt;div class="modal-box"&gt;
+          &lt;h3&gt;
+            请确认您的机票预定信息
+            &lt;button class="button modal-close-button"&gt;&lt;/button&gt;
+          &lt;/h3&gt;
+          &lt;div class="modal-content"&gt;
+            &lt;table class="table table-bordered table-hover table-striped light-bg"&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;乘机人&lt;/th&gt;
+                  &lt;th&gt;身份证号码&lt;/th&gt;
+                  &lt;th&gt;时间&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;张三&lt;/td&gt;
+                  &lt;td&gt;330284759238420192&lt;/td&gt;
+                  &lt;td&gt;2015-12-06&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;李四&lt;/td&gt;
+                  &lt;td&gt;330284759238420192&lt;/td&gt;
+                  &lt;td&gt;2015-12-06&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;王麻子&lt;/td&gt;
+                  &lt;td&gt;330284759238420192&lt;/td&gt;
+                  &lt;td&gt;2015-12-06&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;二子&lt;/td&gt;
+                  &lt;td&gt;330284759238420192&lt;/td&gt;
+                  &lt;td&gt;2015-12-06&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+          &lt;div class="modal-box-buttons"&gt;
+            &lt;button class="button"&gt;返回修改&lt;/button&gt;
+            &lt;button class="button button-danger"&gt;确认无误&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button class="button button-dream" onclick="document.getElementById('demo-modal').className += ' active'"&gt;点击显示模态框&lt;/button&gt;
+      </code></pre>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PeachScript/ui-p2p-lending">ui-p2p-lending</a> is maintained by <a href="https://github.com/PeachScript">PeachScript</a>.</span>
