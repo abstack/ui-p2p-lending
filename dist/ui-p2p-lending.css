@@ -1202,7 +1202,6 @@ textarea.form-control {
 .input-group .input-group-addon.input-group-addon-select:after {
   content: '';
   position: absolute;
-  display: none\0;
   z-index: 0;
   top: 50%;
   right: 6px;
@@ -1567,6 +1566,7 @@ a.label:hover {
 .prompt-box-queue.bottom-center .prompt-box {
   max-width: initial;
   width: 100%;
+  max-width: 100%;
 }
 .prompt-box-queue.top-center {
   top: 20px;
