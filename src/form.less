@@ -183,6 +183,12 @@ textarea.form-control{
         border: @size solid transparent;
         border-top-color: #666;
       }
+      // 在火狐下隐藏自定义小三角
+      @-moz-document url-prefix(){
+        &:after{
+          display: none;
+        }
+      }
       select{
         position: relative;
         z-index: 1;

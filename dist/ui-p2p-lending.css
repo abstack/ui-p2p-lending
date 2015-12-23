@@ -1211,6 +1211,11 @@ textarea.form-control {
   border: 6px solid transparent;
   border-top-color: #666;
 }
+@-moz-document url-prefix() {
+  :after {
+    display: none;
+  }
+}
 .input-group .input-group-addon.input-group-addon-select select {
   position: relative;
   z-index: 1;
