@@ -1205,6 +1205,7 @@ textarea.form-control {
   z-index: 0;
   top: 50%;
   right: 6px;
+  display: block;
   margin-top: -3px;
   width: 0;
   height: 0;
@@ -1288,6 +1289,7 @@ textarea.form-control {
   position: absolute;
   top: 50%;
   right: 5px;
+  display: block;
   border: 6px solid transparent;
 }
 .table th.sorter:before {
@@ -1670,6 +1672,7 @@ a.label:hover {
   position: absolute;
   left: 50%;
   top: 50%;
+  display: block;
   margin-top: -1.5px;
   margin-left: -28%;
   width: 56%;
@@ -1873,6 +1876,7 @@ a.label:hover {
   position: absolute;
   right: 44%;
   top: 0;
+  display: block;
   background-color: #999;
 }
 .modal-container .modal-close-button:before {
